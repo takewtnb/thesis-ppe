@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" data-i18n="metaDescription" content="A visual essay on VOC departure intensity and female literacy in the early-modern Dutch Republic — bachelor's thesis by Take Watanabe." />
+    <title data-i18n="metaTitle">Women’s economic autonomy in the Dutch Republic and maritime-induced male absence · Take Watanabe</title>
+  </head>
+  <body>
+    <div class="progress" aria-hidden="true"><div class="progress__bar" id="progress-bar"></div></div>
+
+    <nav class="chapters" data-i18n-aria="navAria" aria-label="Chapters">
+      <div class="chapters__bar">
+        <a class="chapters__brand" href="#top">
+          <span class="chapters__brand-name" data-i18n="navBrand">Take Watanabe · Bachelor’s thesis</span>
+          <span class="chapters__brand-title" data-i18n="navTitle">Women’s economic autonomy in the Dutch Republic and maritime-induced male absence</span>
+        </a>
+        <div class="chapters__actions">
+          <div class="lang" role="group" data-i18n-aria="langAria" aria-label="Language">
+            <button type="button" class="lang__btn is-active" data-set-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang__btn" data-set-lang="nl" aria-pressed="false">NL</button>
+          </div>
+          <button
+            type="button"
+            class="chapters__menu-btn"
+            id="chapters-menu-btn"
+            aria-expanded="false"
+            aria-controls="chapters-menu"
+            data-i18n-aria="navMenuOpen"
+            aria-label="Open section menu"
+          >
+            <span class="chapters__menu-icon" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="chapters__menu" id="chapters-menu" hidden>
+        <ol class="chapters__list">
+          <li><a href="#setting" data-i18n="navSetting">Historical setting</a></li>
+          <li><a href="#question" data-i18n="navQuestion">Research question</a></li>
+          <li><a href="#observe" data-i18n="navObserve">Literacy outcome</a></li>
+          <li><a href="#intensity" data-i18n="navIntensity">VOC intensity</a></li>
+          <li><a href="#compare" data-i18n="navCompare">How we compare</a></li>
+          <li><a href="#estimates" data-i18n="navEstimates">Main estimates</a></li>
+          <li><a href="#fragile" data-i18n="navFragile">Fragile evidence</a></li>
+          <li><a href="#read" data-i18n="navRead">How to read it</a></li>
+        </ol>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__brand" data-i18n="heroBrand">Take Watanabe · Bachelor’s thesis · Vrije Universiteit Amsterdam</p>
+          <h1 class="hero__title" data-i18n="heroTitle">Women’s economic autonomy in the Dutch Republic and maritime-induced male absence</h1>
+          <p class="hero__lede" data-i18n="heroLede">
+            A historical inquiry into whether cities with greater VOC departure intensity later show narrower literacy gender gaps—and what that evidence can, and cannot, support.
+          </p>
+        </div>
+
+        <aside class="hero-findings" data-i18n-aria="heroFindingsAria" aria-label="What the evidence suggests">
+          <p class="hero-findings__eyebrow" data-i18n="heroFindingsEyebrow">What the evidence suggests</p>
+
+          <a
+            class="hero-findings__lead"
+            href="#estimates"
+            data-i18n-aria="heroEstimateAria"
+            aria-label="2.84 percentage points: estimated smaller literacy gender gap by 1750 per one standard deviation higher VOC departure intensity, with geography controls"
+          >
+            <span class="hero-findings__value" aria-hidden="true">
+              <span data-i18n="heroEstimateNumber">2.84</span>
+              <span class="hero-findings__unit" data-i18n="heroEstimateUnit">pp</span>
+            </span>
+            <span class="hero-findings__label" data-i18n="heroEstimateLabel">
+              Estimated smaller literacy gender gap by 1750 per 1 SD higher VOC departure intensity
+            </span>
+            <span class="hero-findings__qualifier" data-i18n="heroEstimateQualifier">Preferred model · geography controls</span>
+          </a>
+
+          <div class="hero-findings__support">
+            <a
+              class="hero-findings__fact"
+              href="#estimates"
+              data-i18n-aria="heroFemaleAria"
+              aria-label="99 percent female-driven: essentially all of the estimated gap change comes through female literacy"
+            >
+              <span class="hero-findings__fact-value">99%</span>
+              <span class="hero-findings__fact-label" data-i18n="heroFemaleLabel">female-driven</span>
+            </a>
+            <a
+              class="hero-findings__fact"
+              href="#estimates"
+              data-i18n-aria="heroSampleAria"
+              aria-label="32 cities and 96 city-years in the sample"
+            >
+              <span class="hero-findings__fact-value">32</span>
+              <span class="hero-findings__fact-label" data-i18n="heroSampleLabel">cities · 96 city-years</span>
+            </a>
+          </div>
+
+          <a
+            class="hero-findings__caveat"
+            href="#fragile"
+            data-i18n-aria="heroCaveatAria"
+            aria-label="Critical caveat: the treatment interactions become statistically insignificant when Rotterdam is excluded"
+          >
+            <span class="hero-findings__caveat-label" data-i18n="heroCaveatLabel">Critical caveat</span>
+            <span data-i18n="heroCaveatText">The treatment interactions become statistically insignificant when Rotterdam is excluded.</span>
+          </a>
+        </aside>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#setting" data-i18n="heroBegin">Follow the evidence</a>
+          <a class="btn btn--ghost" href="./files/thesis.pdf" data-i18n="heroPdf" download>Download PDF</a>
+        </div>
+
+        <figure class="hero__plate" aria-hidden="true">
+          <div class="hero__plate-meta">
+            <span>FIG. 1</span>
+            <span>1600—1750</span>
+          </div>
+          <div class="hero__plate-image">
+            <img class="hero__map" data-fig="cities-map-hero" src="/figures/cities-map-hero.en.svg?v=7338a0517a" alt="" />
+          </div>
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="setting" data-reveal>
+        <div class="section__inner">
+          <p class="eyebrow" data-i18n="settingEyebrow">The setting</p>
+          <h2 data-i18n="settingH2">A republic at sea, and women left ashore</h2>
+          <p data-i18n="settingP1">
+            The Eighty Years’ War against Spanish rule began in 1568. Decades later, in 1602, the Dutch East India Company (VOC) was chartered. Over the seventeenth century, long and deadly voyages became intertwined with the Republic’s fiscal and geopolitical position—and with the making of the Dutch Golden Age.
+          </p>
+          <figure class="figure figure--globe" data-reveal>
+            <div
+              class="chart chart--voyage-globe"
+              data-chart="voyage-globe"
+              role="group"
+              data-i18n-aria="globeAlt"
+              aria-label="Interactive globe of reconstructed VOC and WIC sailing corridors and documented voyages"
+            ></div>
+            <figcaption data-i18n="globeCaption">
+              Selected VOC and WIC connections in the seventeenth and eighteenth centuries. Ports are source-backed; lines between them reconstruct historically attested sailing corridors rather than exact ship tracks.
+            </figcaption>
+          </figure>
+          <p data-i18n="settingP2">
+            Those voyages pulled marriageable men out of cities for years at a time. Travellers’ accounts from the period described Dutch women as economically active, independent, and dominant. Historians have long noted seafarers’ wives taking charge of households, and unmarried women navigating marriage markets with fewer local men available.
+          </p>
+          <p data-i18n="settingP3">
+            What remains less settled, quantitatively, is whether places more exposed to VOC recruitment look different in women’s human capital over the long run.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="question" data-reveal>
+        <div class="section__inner">
+          <p class="eyebrow" data-i18n="questionEyebrow">The question</p>
+          <h2 data-i18n="questionH2">Did VOC exposure reshape women’s literacy?</h2>
+          <blockquote class="pull" data-i18n="questionPull">
+            How did prolonged and permanent male absence resulting from voyages of the Dutch East India Company affect women’s economic autonomy in the early-modern Dutch Republic?
+          </blockquote>
+          <p data-i18n-html="questionP1Html">
+            This project treats that question as a historical <strong>quasi-experimental</strong> inquiry—not a settled natural experiment. The contribution is a city-level quantitative look at a Dutch-specific channel: marriage markets, seafarers’ households, legal capacity during absence, and demand for literate work in a maritime economy—rather than a peacetime replay of wartime sex-ratio shocks alone.
+          </p>
+          <p class="soft-preview" data-i18n-html="questionPreviewHtml">
+            The headline result is suggestive rather than definitive. To understand why, first follow how the literacy outcome, VOC exposure, and city comparisons are constructed.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="observe" data-reveal>
+        <div class="section__inner">
+          <p class="eyebrow" data-i18n="observeEyebrow">What we can observe</p>
+          <h2 data-i18n="observeH2">Gendered literacy, not autonomy itself</h2>
+          <p data-i18n-html="observeP1Html">
+            Economic autonomy is broader than literacy. The measurable outcome here is the <strong>literacy gender gap</strong>—female minus male literacy—interpreted as a signal of gendered human-capital acquisition, with implications for autonomy rather than a direct measure of it. Higher values mean a smaller disadvantage for women.
+          </p>
+          <p data-i18n="observeP2">
+            Literacy rates come from Akçomak, Webbink, and ter Weel (2016), who use hand signatures versus marks in the Amsterdam Marriage Registers, assigning brides and grooms to cities by former residence. That source is powerful for early-modern literacy—and selective. It captures people who migrated to Amsterdam and married there, not a full census of origin-city populations. VOC exposure could itself shape who migrates and who appears in the registers.
+          </p>
+          <p data-i18n="observeP3">
+            The interpretive mechanism still matters: literacy opened higher-skilled maritime and commercial work, and helped women run or take over businesses. Male absence is one reading of why incentives shifted; it is not what the data directly count.
+          </p>
+
+          <figure class="figure figure--svg" data-reveal>
+            <div class="chart" data-chart="literacy-gap" role="img" data-i18n-aria="gapAlt" aria-label="Line chart of mean male and female literacy from 1600 to 1750; the shaded gender gap narrows from 33.2 to 25.6 percentage points"></div>
+            <figcaption data-i18n="gapCaption">
+              Average city-level literacy by gender across the sample years. The shaded band is the literacy gender gap (male − female); it narrows from 33.2 percentage points in 1600 to 25.6 in 1750, even as both series rise.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--wide" id="intensity" data-reveal>
+        <div class="section__inner section__inner--wide">
+          <p class="eyebrow" data-i18n="intensityEyebrow">VOC departure intensity</p>
+          <h2 data-i18n="intensityH2">A continuous exposure, not a clean treatment switch</h2>
+          <p class="measure" data-i18n-html="intensityPHtml">
+            Exposure is built from VOC muster records (Petram et al., 2024): disambiguated seafarers with a registered first departure and place, aggregated by city of origin over the available record window <strong>1633–1750</strong>, then divided by pre-treatment city population around 1600. Call this <strong>VOC departure intensity</strong>—a flow of contracts and persons, not a stock of absent men. Male absence, remittances, and legal capacity are interpretations layered on that measure.
+          </p>
+
+          <figure class="figure figure--svg" data-reveal>
+            <div class="chart" data-chart="cities-map" role="img" data-i18n-aria="mapAlt" aria-label="Stylized Dutch Republic map from thesis GIS outline, with Zuiderzee and Zeeland islands; circle size shows VOC departure intensity, Rotterdam highlighted"></div>
+            <figcaption data-i18n="mapCaption">
+              Thirty-two Dutch cities with literacy rates in 1600, 1675, and 1750. Land outline follows the thesis GIS Republic geometry (simplified), including the Zuiderzee and Zeeland islands. Circle size scales with VOC departure intensity. Amsterdam’s literacy rates are missing from the dataset.
+            </figcaption>
+          </figure>
+
+          <figure class="figure figure--svg" data-reveal>
+            <div class="chart" data-chart="treatment-intensity" role="img" data-i18n-aria="histAlt" aria-label="Histogram of VOC departure intensity across 32 Dutch cities, with Rotterdam in the right tail"></div>
+            <figcaption data-i18n="histCaption">
+              Departure intensity across the sample. Almost every city has some VOC departures over a century; binary treated/control splits are infeasible. Rotterdam sits in the far right tail—visible before any regression results.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="compare" data-reveal>
+        <div class="section__inner">
+          <p class="eyebrow" data-i18n="compareEyebrow">How we compare cities</p>
+          <h2 data-i18n="compareH2">Dose comparisons under demanding assumptions</h2>
+          <p data-i18n="compareP1">
+            The design is a continuous difference-in-differences: compare how the literacy gender gap evolves after 1600 across cities with different departure intensity, with city and year fixed effects. Preferred specifications interact longitude and latitude with year fixed effects to hold differential western maritime trajectories closer to fixed. Population growth enters as a further control in robustness checks.
+          </p>
+
+          <div class="schematic" data-i18n-aria="schematicAria" aria-label="Continuous DiD schematic">
+            <div class="schematic__step">
+              <span class="schematic__label" data-i18n="schematicOutcome">Outcome</span>
+              <p data-i18n="schematicOutcomeBody">Change in literacy gender gap (female − male)</p>
+            </div>
+            <div class="schematic__arrow" aria-hidden="true">→</div>
+            <div class="schematic__step">
+              <span class="schematic__label" data-i18n="schematicExposure">Exposure</span>
+              <p data-i18n="schematicExposureBody">VOC departures ÷ 1600 population</p>
+            </div>
+            <div class="schematic__arrow" aria-hidden="true">→</div>
+            <div class="schematic__step">
+              <span class="schematic__label" data-i18n="schematicHeld">Held fixed</span>
+              <p data-i18n="schematicHeldBody">City FE, year FE, lon/lat × year</p>
+            </div>
+          </div>
+
+          <p data-i18n="compareP2">
+            The estimand is a dose comparison: how much more the gap closes where intensity is higher. A one standard deviation rise in intensity equals about a 25% of 1600 population flowing out as recorded departures over the window—useful for scale, not a claim of as-if-random assignment.
+          </p>
+          <p data-i18n="compareP3">
+            Identification still requires a strong exclusion condition: after these controls, high-departure cities would otherwise have followed similar gender-gap trends. Geography is a first-order confounder—coefficients change sign once longitude interactions enter—so the association is clearly model-dependent. Departure intensity may also proxy maritime commercialization, chamber-city status, and labour-market connectedness rather than male absence alone.
+          </p>
+
+          <details class="accordion">
+            <summary data-i18n="methodsSummary">Methods note: TWFE equation &amp; gap sign</summary>
+            <div class="accordion__body">
+              <p data-i18n="methodsP1">
+                Baseline form: literacy gender gap<sub>i,t</sub> = β (D<sub>i</sub> × Post<sub>t</sub>) + city FE + year FE + controls × year + ε<sub>i,t</sub>. A flexible form replaces Post with year-specific interactions for 1675 and 1750 (1600 as baseline). Standard errors are clustered by city.
+              </p>
+              <p data-i18n="methodsP2">
+                Gap = female literacy − male literacy. Positive coefficients are discussed as a closing of women’s disadvantage (the gap becoming less negative / more equal), following the thesis convention.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="section" id="estimates" data-reveal>
+        <div class="section__inner section__inner--wide">
+          <p class="eyebrow" data-i18n="estimatesEyebrow">What the estimates show</p>
+          <h2 data-i18n="estimatesH2">Preferred specification, female-driven pattern</h2>
+          <p class="measure" data-i18n-html="estimatesPHtml">
+            In the preferred flexible specification with longitude and latitude controls, the 1750 interaction is positive and statistically significant at conventional levels: a one-SD higher departure intensity corresponds to an estimated <strong>2.84 percentage-point</strong> smaller literacy gender gap (coefficient 11.37 × SD ≈ 0.25). The same specification with population-growth controls remains similar in magnitude. Without geography controls, the pattern does not look like this—sensitivity that marks longitude as a first-order confounder, not a minor covariate.
+          </p>
+
+          <div class="stat-row" data-reveal>
+            <div class="stat">
+              <p class="stat__value">2.84<span class="stat__unit">pp</span></p>
+              <p class="stat__label" data-i18n="statGapLabel">Est. gap closing per 1 SD intensity by 1750 (geo controls)</p>
+            </div>
+            <div class="stat">
+              <p class="stat__value">99%</p>
+              <p class="stat__label" data-i18n="statFemaleLabel">Of the 1750 gap estimate via female literacy</p>
+            </div>
+            <div class="stat">
+              <p class="stat__value">32</p>
+              <p class="stat__label" data-i18n="statNLabel">Cities · 96 city–years</p>
+            </div>
+          </div>
+
+          <figure class="figure figure--svg" data-reveal>
+            <div class="chart" data-chart="event-study" role="img" data-i18n-aria="eventAlt" aria-label="Event-study plot of VOC departure intensity interactions for 1600, 1675, and 1750"></div>
+            <figcaption data-i18n="eventCaption">
+              Preferred flexible specification with geography controls. Point estimates with city-clustered 95% confidence intervals. The 1750 estimate is the main empirical climax of this model—not a claim that timing is cleanly identified (see fragility).
+            </figcaption>
+          </figure>
+
+          <div class="decomp" data-reveal>
+            <p class="decomp__intro" data-i18n="decompIntro">Decomposition of the preferred 1750 gap estimate:</p>
+            <div class="decomp__toggle" role="tablist" data-i18n-aria="decompAria" aria-label="Female versus male literacy">
+              <button type="button" class="decomp__btn is-active" data-decomp="female" role="tab" aria-selected="true" data-i18n="decompFemaleBtn">Female literacy</button>
+              <button type="button" class="decomp__btn" data-decomp="male" role="tab" aria-selected="false" data-i18n="decompMaleBtn">Male literacy</button>
+            </div>
+            <div class="decomp__panels">
+              <div class="decomp__panel is-active" data-panel="female" role="tabpanel">
+                <p class="decomp__number">+11.30 pp</p>
+                <p data-i18n="decompFemaleP">Female literacy coefficient at 1750 (geo controls), significant at 5%. This accounts for essentially all of the gender-gap estimate.</p>
+              </div>
+              <div class="decomp__panel" data-panel="male" role="tabpanel" hidden>
+                <p class="decomp__number">−0.07 pp</p>
+                <p data-i18n="decompMaleP">Male literacy coefficient at 1750 is near zero and not statistically significant—consistent with a female-driven pattern under the preferred controls.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="fragile" data-reveal>
+        <div class="section__inner">
+          <p class="eyebrow" data-i18n="fragileEyebrow">Where the evidence is fragile</p>
+          <h2 data-i18n="fragileH2">Rotterdam first—then the rest of the limits</h2>
+          <p data-i18n-html="fragilePHtml">
+            Dropping Rotterdam, the major intensity outlier and a founding VOC chamber city, makes the treatment interactions statistically insignificant with much larger standard errors. That is not a minor robustness footnote. It cuts both ways: Rotterdam may be where the phenomenon is most real, or the sample average may be an illusion of one city’s leverage. A cautious reading treats the result as closer to a <strong>high-exposure maritime-city story</strong> than a stable average effect across all 32 cities.
+          </p>
+          <ul class="limits">
+            <li data-i18n-html="limit1Html"><strong>Small sample.</strong> Thirty-two cities, clustered errors, many controls—conventional significance is fragile.</li>
+            <li data-i18n-html="limit2Html"><strong>One pre-period.</strong> Literacy is observed in 1600, 1675, and 1750; classic pre-trend tests are unavailable.</li>
+            <li data-i18n-html="limit3Html"><strong>Treatment timing.</strong> Intensity is cumulative through 1750 and then used for both post years, so the 1675 coefficient can load on departures that occur after 1675. Dynamic interpretation is limited.</li>
+            <li data-i18n-html="limit4Html"><strong>Confounding channel.</strong> Departure intensity may capture commercialization and institutions as much as sex-ratio pressure.</li>
+            <li data-i18n-html="limit5Html"><strong>Outcome selection.</strong> Amsterdam marriage-register literacy may select on migration and marriage.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="read" data-reveal>
+        <div class="section__inner">
+          <p class="eyebrow" data-i18n="readEyebrow">How to read it</p>
+          <h2 data-i18n="readH2">A defensible claim</h2>
+          <blockquote class="pull pull--verdict" data-i18n="readPull">
+            Cities with greater VOC departure intensity show suggestive evidence of later female-literacy gains, concentrated in high-exposure maritime places, under demanding identification assumptions.
+          </blockquote>
+          <p data-i18n="readP1">
+            That is narrower than “VOC male absence caused women’s economic autonomy to rise across Dutch cities.” Male absence remains a historically grounded interpretation; the estimates are associations from a difficult setting.
+          </p>
+          <p data-i18n="readP2">
+            The same history also opens an interpretive question about colonialism: discourse often centres the colonised abroad, while this inquiry asks what happened to a marginalised group inside a colonising society. Any positive reading of domestic literacy gains sits beside extractive harm overseas; how far those should be weighed together is a normative judgment the regressions cannot settle.
+          </p>
+          <p data-i18n="readP3">
+            Contemporary policy analogies are optional and conditional at best. Large labour-market disruptions can reshape gendered human-capital incentives in history; this thesis does not identify a modern policy analogue.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__inner">
+        <p class="footer__title" data-i18n="footerTitle">Women’s economic autonomy in the Dutch Republic and maritime-induced male absence</p>
+        <p data-i18n="footerByline">Take Watanabe · Philosophy, Politics and Economics · Vrije Universiteit Amsterdam · 22 May 2026</p>
+        <p class="footer__links">
+          <a href="./files/thesis.pdf" data-i18n="footerPdf" download>Thesis PDF</a>
+          <a href="#top" data-i18n="footerTop">Back to top</a>
+        </p>
+        <section class="refs" aria-labelledby="refs-heading">
+          <h2 id="refs-heading" class="refs__title" data-i18n="footerRefs">References</h2>
+          <p class="refs__note" data-i18n="footerCiteNote">Sources cited in this narrative.</p>
+          <ul class="refs__list" id="bibliography-list"></ul>
+        </section>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" role="img" aria-labelledby="gapTitle gapDesc">
+  <title id="gapTitle">Average literacy by gender, 1600–1750</title>
+  <desc id="gapDesc">Mean city-level male and female literacy over time; the shaded gap narrows from 33.2 to 25.6 percentage points.</desc>
+  <defs>
+    <style>
+      .tick { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 13px; fill: #56564f; }
+      .axis-title { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 14px; fill: #23443e; font-weight: 600; }
+      .series { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .ann { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 12px; fill: #56564f; font-weight: 600; }
+      .note { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 13px; fill: #56564f; font-style: italic; }
+    </style>
+  </defs>
+  <rect width="880" height="480" fill="#f5f2eb"/>
+  <line x1="64" y1="416.0" x2="712" y2="416.0" stroke="#cbc7bd" stroke-width="1"/><text x="52" y="420.0" text-anchor="end" class="tick">20</text>
+<line x1="64" y1="310.9" x2="712" y2="310.9" stroke="#cbc7bd" stroke-width="1"/><text x="52" y="314.9" text-anchor="end" class="tick">40</text>
+<line x1="64" y1="205.7" x2="712" y2="205.7" stroke="#cbc7bd" stroke-width="1"/><text x="52" y="209.7" text-anchor="end" class="tick">60</text>
+<line x1="64" y1="100.6" x2="712" y2="100.6" stroke="#cbc7bd" stroke-width="1"/><text x="52" y="104.6" text-anchor="end" class="tick">80</text>
+  <path d="M64.0,170.9 L388.0,122.3 L712.0,72.4 L712.0,206.8 L388.0,268.4 L64.0,345.3 Z" fill="#6e8a82" fill-opacity="0.22"/>
+  <path d="M64.0,170.9 L388.0,122.3 L712.0,72.4" fill="none" stroke="#9b4d35" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M64.0,345.3 L388.0,268.4 L712.0,206.8" fill="none" stroke="#23443e" stroke-width="2.6" stroke-linejoin="round"/>
+  <circle cx="64.0" cy="170.9" r="6" fill="#9b4d35" stroke="#f5f2eb" stroke-width="1.5"/>
+<circle cx="388.0" cy="122.3" r="6" fill="#9b4d35" stroke="#f5f2eb" stroke-width="1.5"/>
+<circle cx="712.0" cy="72.4" r="6" fill="#9b4d35" stroke="#f5f2eb" stroke-width="1.5"/>
+  <circle cx="64.0" cy="345.3" r="6" fill="#23443e" stroke="#f5f2eb" stroke-width="1.5"/>
+<circle cx="388.0" cy="268.4" r="6" fill="#23443e" stroke="#f5f2eb" stroke-width="1.5"/>
+<circle cx="712.0" cy="206.8" r="6" fill="#23443e" stroke="#f5f2eb" stroke-width="1.5"/>
+  <g class="gap-ann">
+    <line x1="64.0" y1="170.9" x2="64.0" y2="345.3" stroke="#56564f" stroke-width="1.4"/>
+    <line x1="59.0" y1="170.9" x2="69.0" y2="170.9" stroke="#56564f" stroke-width="1.4"/>
+    <line x1="59.0" y1="345.3" x2="69.0" y2="345.3" stroke="#56564f" stroke-width="1.4"/>
+    <rect x="78.0" y="247.1" width="78" height="22" rx="3" fill="#fbfaf6" fill-opacity="0.92"/>
+    <text class="ann" x="82.0" y="263.1">33.2 pp gap</text>
+  </g>
+  <g class="gap-ann">
+    <line x1="712.0" y1="72.4" x2="712.0" y2="206.8" stroke="#56564f" stroke-width="1.4"/>
+    <line x1="707.0" y1="72.4" x2="717.0" y2="72.4" stroke="#56564f" stroke-width="1.4"/>
+    <line x1="707.0" y1="206.8" x2="717.0" y2="206.8" stroke="#56564f" stroke-width="1.4"/>
+    <rect x="620.0" y="128.6" width="78" height="22" rx="3" fill="#fbfaf6" fill-opacity="0.92"/>
+    <text class="ann" x="624.0" y="144.6">25.6 pp gap</text>
+  </g>
+  <text class="note" x="388.0" y="373.9" text-anchor="middle">The shaded gap narrows over time</text>
+  <text class="series" fill="#9b4d35" x="726.0" y="76.4">Male literacy</text>
+  <text class="series" fill="#23443e" x="726.0" y="210.8">Female literacy</text>
+  <line x1="64" y1="416" x2="712" y2="416" stroke="#23443e" stroke-width="1.5"/>
+  <line x1="64" y1="48" x2="64" y2="416" stroke="#23443e" stroke-width="1.5"/>
+  <line x1="64.0" y1="416" x2="64.0" y2="423" stroke="#23443e" stroke-width="1.5"/><text x="64.0" y="444" text-anchor="middle" class="tick">1600</text>
+<line x1="388.0" y1="416" x2="388.0" y2="423" stroke="#23443e" stroke-width="1.5"/><text x="388.0" y="444" text-anchor="middle" class="tick">1675</text>
+<line x1="712.0" y1="416" x2="712.0" y2="423" stroke="#23443e" stroke-width="1.5"/><text x="712.0" y="444" text-anchor="middle" class="tick">1750</text>
+  <text class="axis-title" x="388" y="466" text-anchor="middle">Year</text>
+  <text class="axis-title" x="18" y="232" text-anchor="middle" transform="rotate(-90 18 232)">Mean literacy (%)</text>
+</svg>

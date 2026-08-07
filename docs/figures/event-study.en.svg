@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" role="img" aria-labelledby="esTitle esDesc">
+  <title id="esTitle">Event-study estimates for the literacy gender gap</title>
+  <desc id="esDesc">Point estimates and 95% confidence intervals for VOC departure intensity interactions in 1600, 1675, and 1750 under geography controls.</desc>
+  <defs><style>.tick { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 13px; fill: #56564f; } .coef { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 12px; fill: #23443e; font-weight: 600; paint-order: stroke fill; stroke: #f5f2eb; stroke-width: 5px; stroke-linejoin: round; } .chart-note { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 12px; fill: #56564f; font-weight: 500; letter-spacing: 0.01em; } .axis-title { font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; font-size: 14px; fill: #23443e; font-weight: 600; }</style></defs>
+  <rect width="880" height="500" fill="#f5f2eb"/>
+  <line x1="64" y1="430.0" x2="844" y2="430.0" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="434.0" text-anchor="end" class="tick">-16</text>
+<line x1="64" y1="393.4" x2="844" y2="393.4" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="397.4" text-anchor="end" class="tick">-12</text>
+<line x1="64" y1="356.8" x2="844" y2="356.8" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="360.8" text-anchor="end" class="tick">-8</text>
+<line x1="64" y1="320.2" x2="844" y2="320.2" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="324.2" text-anchor="end" class="tick">-4</text>
+<line x1="64" y1="283.6" x2="844" y2="283.6" stroke="#cbc7bd" stroke-width="1.8" stroke-dasharray="0"/><text x="52" y="287.6" text-anchor="end" class="tick">0</text>
+<line x1="64" y1="247.0" x2="844" y2="247.0" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="251.0" text-anchor="end" class="tick">4</text>
+<line x1="64" y1="210.4" x2="844" y2="210.4" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="214.4" text-anchor="end" class="tick">8</text>
+<line x1="64" y1="173.8" x2="844" y2="173.8" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="177.8" text-anchor="end" class="tick">12</text>
+<line x1="64" y1="137.2" x2="844" y2="137.2" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="141.2" text-anchor="end" class="tick">16</text>
+<line x1="64" y1="100.6" x2="844" y2="100.6" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="104.6" text-anchor="end" class="tick">20</text>
+<line x1="64" y1="64.0" x2="844" y2="64.0" stroke="#cbc7bd" stroke-width="1" stroke-dasharray="4 5"/><text x="52" y="68.0" text-anchor="end" class="tick">24</text>
+  <path d="M64.0,283.6 L454.0,260.2 L844.0,179.6" fill="none" stroke="#6e8a82" stroke-width="2" stroke-dasharray="6 5"/>
+  <g>
+      <line x1="64.0" y1="283.6" x2="64.0" y2="283.6" stroke="#315b53" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="56.0" y1="283.6" x2="72.0" y2="283.6" stroke="#315b53" stroke-width="2"/>
+      <line x1="56.0" y1="283.6" x2="72.0" y2="283.6" stroke="#315b53" stroke-width="2"/>
+      <circle cx="64.0" cy="283.6" r="6" fill="#f5f2eb" stroke="#315b53" stroke-width="2.5"/>
+      <text x="64.0" y="458" text-anchor="middle" class="tick">1600 (base)</text>
+      <text x="78.0" y="270.6" text-anchor="start" class="coef">0.00</text>
+    </g>
+<g>
+      <line x1="454.0" y1="400.8" x2="454.0" y2="119.6" stroke="#315b53" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="446.0" y1="400.8" x2="462.0" y2="400.8" stroke="#315b53" stroke-width="2"/>
+      <line x1="446.0" y1="119.6" x2="462.0" y2="119.6" stroke="#315b53" stroke-width="2"/>
+      <circle cx="454.0" cy="260.2" r="8" fill="#315b53" stroke="#315b53" stroke-width="2.5"/>
+      <text x="454.0" y="458" text-anchor="middle" class="tick">1675</text>
+      <text x="468.0" y="247.2" text-anchor="start" class="coef">2.56</text>
+    </g>
+<g>
+      <line x1="844.0" y1="274.6" x2="844.0" y2="84.5" stroke="#9b4d35" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="836.0" y1="274.6" x2="852.0" y2="274.6" stroke="#9b4d35" stroke-width="2"/>
+      <line x1="836.0" y1="84.5" x2="852.0" y2="84.5" stroke="#9b4d35" stroke-width="2"/>
+      <circle cx="844.0" cy="179.6" r="8" fill="#9b4d35" stroke="#9b4d35" stroke-width="2.5"/>
+      <text x="844.0" y="458" text-anchor="middle" class="tick">1750</text>
+      <text x="830.0" y="166.6" text-anchor="end" class="coef">11.37</text>
+    </g>
+  <line x1="64" y1="430" x2="844" y2="430" stroke="#23443e" stroke-width="1.5"/>
+  <line x1="64" y1="64" x2="64" y2="430" stroke="#23443e" stroke-width="1.5"/>
+  <text class="axis-title" x="454" y="484" text-anchor="middle">Year</text>
+  <text class="axis-title" x="20" y="247" text-anchor="middle" transform="rotate(-90 20 247)">Literacy gender gap (pp)</text>
+  <text x="64" y="30" class="chart-note">Preferred flexible TWFE · lon/lat × year FE · city-clustered 95% CIs</text>
+</svg>

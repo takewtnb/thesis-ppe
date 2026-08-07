@@ -1,0 +1,5 @@
+# Narrative site
+site/node_modules/
+site/dist/
+.DS_Store
+site/.venv-gis/

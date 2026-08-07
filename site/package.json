@@ -1,0 +1,24 @@
+{
+  "name": "ppe-thesis-narrative",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "figures": "node scripts/build-figures.mjs",
+    "bibliography": "node scripts/build-bibliography.mjs",
+    "validate:routes": "node scripts/validate-voyage-routes.mjs",
+    "dev": "npm run figures && npm run bibliography && vite",
+    "build": "npm run validate:routes && npm run figures && npm run bibliography && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-sans": "^5.2.5",
+    "@fontsource/source-serif-4": "^5.2.5",
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
+  }
+}
