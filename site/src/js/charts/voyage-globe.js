@@ -71,7 +71,11 @@ function nearestRotation(from, focus) {
 }
 
 export async function renderVoyageGlobe(mount, lang, t) {
-  const data = await loadChartData('voyage-routes');
+  const loadedData = await loadChartData('voyage-routes', 'voc-only-20260809');
+  const data = {
+    ...loadedData,
+    routes: loadedData.routes.filter((route) => route.company === 'voc'),
+  };
   clear(mount);
   mount.classList.add('chart--voyage-globe');
 

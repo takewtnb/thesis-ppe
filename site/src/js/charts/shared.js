@@ -149,13 +149,15 @@ export function fadeIn(el, duration = 700) {
 
 const cache = new Map();
 
-export async function loadChartData(stem) {
-  if (cache.has(stem)) return cache.get(stem);
+export async function loadChartData(stem, version = '') {
+  const cacheKey = version ? `${stem}@${version}` : stem;
+  if (cache.has(cacheKey)) return cache.get(cacheKey);
   const base = import.meta.env.BASE_URL;
-  const res = await fetch(`${base}data/${stem}.json`);
+  const versionQuery = version ? `?v=${encodeURIComponent(version)}` : '';
+  const res = await fetch(`${base}data/${stem}.json${versionQuery}`);
   if (!res.ok) throw new Error(`Failed to load chart data: ${stem}`);
   const data = await res.json();
-  cache.set(stem, data);
+  cache.set(cacheKey, data);
   return data;
 }
 
