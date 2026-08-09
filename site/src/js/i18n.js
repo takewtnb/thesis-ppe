@@ -438,7 +438,7 @@ export const translations = {
     readP2:
       'Deze scriptie opent ook een normatieve discussie over kolonialisme en onderbelichte groepen. Zulke groepen bestonden in het koloniale tijdperk niet alleen in gekoloniseerde gebieden, maar ook in koloniserende landen. De normatieve beoordeling hangt af van de vraag of en in hoeverre binnenlandse gevolgen van een koloniale schok afzonderlijk kunnen worden beoordeeld van de onderdrukkende gevolgen van kolonialisme in het buitenland.',
     readP3:
-      'Historische schokken kunnen overeenkomsten vertonen met beleidsingrepen. Grootschalige beleidsveranderingen die vrouwen ten goede komen door bijvoorbeeld arbeids- en huwelijksmarkten te beïnvloeden, kunnen hun economische positie verbeteren. Historische gebeurtenissen kunnen zo lessen bieden voor het huidige beleid.',
+      'Historische schokken kunnen het equivalent zijn van beleidsinterventies: grootschalige beleidsveranderingen die vrouwen ten goede komen, bijvoorbeeld doordat zij de arbeids- en huwelijksmarkt beïnvloeden, kunnen hun economische positie verbeteren. Het bestuderen van historische schokken biedt daarmee een methode om uit historische gebeurtenissen lessen te trekken voor het beleid van vandaag.',
     readP4:
       'Over het geheel genomen draagt deze scriptie bij aan de economisch-historische literatuur, aan normatieve discussies die verder reiken dan de gebruikelijke economische analyse en aan de vormgeving van hedendaags beleid. Door deze historische context te bestuderen, sluit de scriptie aan bij belangrijke filosofische en beleidsdebatten van vandaag.',
     footerTitle: 'Economische autonomie van vrouwen in de Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
