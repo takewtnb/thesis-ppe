@@ -221,6 +221,8 @@ export const translations = {
     footerTop: 'Back to top',
     footerRefs: 'References',
     footerCiteNote: 'Sources cited in this narrative.',
+    footerTranslationDisclaimer:
+      'Translation note: The thesis was written in English. The Dutch version of this website relies in particular on AI-assisted machine translation; several key passages were manually edited for flow and concision.',
   },
   nl: {
     metaTitle:
@@ -333,7 +335,7 @@ export const translations = {
     observeP1Html:
       'Om de economische autonomie van vrouwen in de Republiek te analyseren, gebruik ik het verschil tussen vrouwelijke en mannelijke geletterdheid als een <strong>waarneembare proxyvariabele</strong>. De geletterdheidskloof weerspiegelt de relatieve economische positie van vrouwen en mannen en biedt daarmee een ruwe, maar bruikbare benadering van economische autonomie.',
     observeP2:
-      'De gegevens over vrouwelijke en mannelijke geletterdheid zijn afkomstig van Akçomak, Webbink en ter Weel (2016). Zij aggregeerden geletterdheid per stad door handtekeningen en eenvoudige merktekens van bruiden en bruidegoms in de Amsterdamse huwelijksregisters te onderscheiden. De voormalige woonplaats werd geregistreerd, waardoor geletterdheid kon worden herleid tot de herkomststeden van bruid en bruidegom.',
+      'De gegevens over vrouwelijke en mannelijke geletterdheid zijn afkomstig van Akçomak, Webbink en ter Weel (2016). Zij brachten geletterdheid per stad in kaart door handtekeningen en eenvoudige merktekens van bruiden en bruidegoms in de Amsterdamse huwelijksregisters te onderscheiden. In deze registers werden voormalige woonplaatsen geregistreerd, waardoor geletterdheid kon worden herleid tot de herkomststeden van bruid en bruidegom.',
     observeP3:
       'Kunnen lezen en schrijven was essentieel voor hogere functies in de maritieme sector, die hogere lonen opleverden. Voor vrouwen hielp geletterdheid bovendien bij het leiden of overnemen van het bedrijf van een ouder of echtgenoot.',
     gapAlt:
@@ -447,6 +449,8 @@ export const translations = {
     footerTop: 'Terug naar boven',
     footerRefs: 'Bronnen',
     footerCiteNote: 'Bronnen die op deze website worden genoemd.',
+    footerTranslationDisclaimer:
+      'Vertaalverantwoording: De scriptie is in het Engels geschreven. Vooral de Nederlandse versie van deze website berust op AI-ondersteunde machinevertaling; enkele belangrijke passages zijn handmatig geredigeerd voor een vloeiende en bondige formulering.',
   },
 };
 
