@@ -339,7 +339,8 @@ function buildHistogram(lang) {
   const xTicks = [];
   for (let x = 0; x <= xMax + 1e-9; x += 0.2) {
     const px = (m.l + (x / xMax) * plotW).toFixed(1);
-    xTicks.push(`<line x1="${px}" y1="${m.t + plotH}" x2="${px}" y2="${m.t + plotH + 6}" stroke="${C.inkMuted}"/><text x="${px}" y="${m.t + plotH + 24}" text-anchor="middle" class="tick">${x.toFixed(1)}</text>`);
+    const label = x.toFixed(1).replace('.', lang === 'nl' ? ',' : '.');
+    xTicks.push(`<line x1="${px}" y1="${m.t + plotH}" x2="${px}" y2="${m.t + plotH + 6}" stroke="${C.inkMuted}"/><text x="${px}" y="${m.t + plotH + 24}" text-anchor="middle" class="tick">${label}</text>`);
   }
   const yTicks = [];
   for (let y = 0; y <= yMax; y += 2) {
@@ -399,7 +400,7 @@ function buildEventStudy(lang) {
       <line x1="${f(x - 8)}" y1="${f(yHi)}" x2="${f(x + 8)}" y2="${f(yHi)}" stroke="${color}" stroke-width="2"/>
       <circle cx="${f(x)}" cy="${f(y)}" r="${p.baseline ? 6 : 8}" fill="${p.baseline ? C.parchment : color}" stroke="${color}" stroke-width="2.5"/>
       <text x="${f(x)}" y="${m.t + plotH + 28}" text-anchor="middle" class="tick">${p.year}${p.baseline ? esc(copy.base) : ''}</text>
-      <text x="${f(labelX)}" y="${f(y - 13)}" text-anchor="${labelAnchor}" class="coef">${p.coef.toFixed(2)}</text>
+      <text x="${f(labelX)}" y="${f(y - 13)}" text-anchor="${labelAnchor}" class="coef">${p.coef.toFixed(2).replace('.', lang === 'nl' ? ',' : '.')}</text>
     </g>`;
   }).join('\n');
   const line = points.map((p, i) => `${i === 0 ? 'M' : 'L'}${f(xOf(p.year))},${f(yOf(p.coef))}`).join(' ');

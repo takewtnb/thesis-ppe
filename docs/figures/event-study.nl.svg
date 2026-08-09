@@ -22,7 +22,7 @@
       <line x1="56.0" y1="283.6" x2="72.0" y2="283.6" stroke="#315b53" stroke-width="2"/>
       <circle cx="64.0" cy="283.6" r="6" fill="#f5f2eb" stroke="#315b53" stroke-width="2.5"/>
       <text x="64.0" y="458" text-anchor="middle" class="tick">1600 (basis)</text>
-      <text x="78.0" y="270.6" text-anchor="start" class="coef">0.00</text>
+      <text x="78.0" y="270.6" text-anchor="start" class="coef">0,00</text>
     </g>
 <g>
       <line x1="454.0" y1="400.8" x2="454.0" y2="119.6" stroke="#315b53" stroke-width="2.5" stroke-linecap="round"/>
@@ -30,7 +30,7 @@
       <line x1="446.0" y1="119.6" x2="462.0" y2="119.6" stroke="#315b53" stroke-width="2"/>
       <circle cx="454.0" cy="260.2" r="8" fill="#315b53" stroke="#315b53" stroke-width="2.5"/>
       <text x="454.0" y="458" text-anchor="middle" class="tick">1675</text>
-      <text x="468.0" y="247.2" text-anchor="start" class="coef">2.56</text>
+      <text x="468.0" y="247.2" text-anchor="start" class="coef">2,56</text>
     </g>
 <g>
       <line x1="844.0" y1="274.6" x2="844.0" y2="84.5" stroke="#9b4d35" stroke-width="2.5" stroke-linecap="round"/>
@@ -38,7 +38,7 @@
       <line x1="836.0" y1="84.5" x2="852.0" y2="84.5" stroke="#9b4d35" stroke-width="2"/>
       <circle cx="844.0" cy="179.6" r="8" fill="#9b4d35" stroke="#9b4d35" stroke-width="2.5"/>
       <text x="844.0" y="458" text-anchor="middle" class="tick">1750</text>
-      <text x="830.0" y="166.6" text-anchor="end" class="coef">11.37</text>
+      <text x="830.0" y="166.6" text-anchor="end" class="coef">11,37</text>
     </g>
   <line x1="64" y1="430" x2="844" y2="430" stroke="#23443e" stroke-width="1.5"/>
   <line x1="64" y1="64" x2="64" y2="430" stroke="#23443e" stroke-width="1.5"/>

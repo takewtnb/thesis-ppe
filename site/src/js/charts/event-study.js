@@ -138,7 +138,7 @@ export async function renderEventStudy(mount, lang, t) {
       'text-anchor': labelOnLeft ? 'end' : 'start',
       class: 'coef',
     });
-    coefLbl.textContent = p.coef.toFixed(2);
+    coefLbl.textContent = fmt(p.coef, lang, 2);
     g.appendChild(coefLbl);
 
     const hit = svgEl('circle', {
@@ -149,7 +149,7 @@ export async function renderEventStudy(mount, lang, t) {
       class: 'chart-hit',
       tabindex: '0',
       role: 'img',
-      'aria-label': `${p.year}: ${p.coef.toFixed(2)}`,
+      'aria-label': `${p.year}: ${fmt(p.coef, lang, 2)}`,
     });
     g.appendChild(hit);
     seriesG.appendChild(g);
@@ -210,7 +210,7 @@ export async function renderEventStudy(mount, lang, t) {
       el.classList.toggle('chart-focus', el === g);
     });
     tip.show(
-      `<strong>${p.year}${p.baseline ? t('esBase') : ''}</strong><br/>${t('esTooltipCoef')}: ${fmt(p.coef, lang, 2)}<br/>95% CI: [${fmt(p.lo, lang, 2)}, ${fmt(p.hi, lang, 2)}]`,
+      `<strong>${p.year}${p.baseline ? t('esBase') : ''}</strong><br/>${t('esTooltipCoef')}: ${fmt(p.coef, lang, 2)}<br/>${t('esTooltipInterval')}: [${fmt(p.lo, lang, 2)}, ${fmt(p.hi, lang, 2)}]`,
       evt.clientX,
       evt.clientY
     );

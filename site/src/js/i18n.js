@@ -34,6 +34,7 @@ export const translations = {
     heroEstimateQualifier: '1750 · controlling for longitude and latitude',
     heroFemaleAria:
       '99.4 percent of the treatment effect on the gender gap in 1750 is accounted for by female literacy',
+    heroFemaleNumber: '99.4%',
     heroFemaleLabel: 'of the treatment effect via female literacy',
     heroSampleAria: '32 cities and 96 city-years in the sample',
     heroSampleLabel: 'cities · 96 city-years',
@@ -166,7 +167,9 @@ export const translations = {
     estimatesPHtml:
       'When the effects of seafarer departures are able to vary over treatment periods, the estimated effect in 1750 is more pronounced compared to the baseline and statistically significant at the 5% level while controlling for longitude and latitude. A city in which a 25% equivalent of the 1600 baseline population flowed out to sea, equal to a one standard deviation increase in the treatment, experienced a <strong>2.84 percentage point decrease</strong> in the literacy gender gap.',
     statGapLabel: 'Percentage point decrease in the literacy gender gap per 1 SD treatment increase',
+    statGapNumber: '2.84',
     statFemaleLabel: 'Of the 1750 treatment effect accounted for by female literacy',
+    statFemaleNumber: '99.4%',
     statNLabel: 'Dutch cities · 96 city–years',
     eventAlt: 'Event-study plot of VOC departure intensity interactions for 1600, 1675, and 1750',
     eventCaption:
@@ -176,10 +179,13 @@ export const translations = {
     esNote: 'Preferred flexible TWFE · lon/lat × year FE · city-clustered 95% CIs',
     esBase: ' (base)',
     esTooltipCoef: 'Estimate',
+    esTooltipInterval: '95% CI',
     decompIntro: 'Composition of the literacy gender gap estimate in 1750:',
     decompAria: 'Female versus male literacy',
     decompFemaleBtn: 'Female literacy',
     decompMaleBtn: 'Male literacy',
+    decompFemaleNumber: '+11.30 pp',
+    decompMaleNumber: '−0.07 pp',
     decompFemaleP:
       'The female literacy coefficient is statistically significant at the 5% level in 1750, accounting for 99.4% of the treatment effect on the gender gap.',
     decompMaleP:
@@ -227,14 +233,14 @@ export const translations = {
     navMenuClose: 'Sluit sectiemenu',
     navBrand: 'Take Watanabe · Philosophy, Politics and Economics',
     navTitle:
-      'Economische autonomie van vrouwen in de Nederlandse Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
+      'Economische autonomie van vrouwen in de Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
     navSetting: 'Inleiding',
     navQuestion: 'Onderzoeksvraag',
     navObserve: 'Conceptueel kader en databronnen',
-    navIntensity: 'Data en behandelingsintensiteit',
+    navIntensity: 'Gegevens en behandelingsintensiteit',
     navCompare: 'Empirische strategie',
     navEstimates: 'Resultaten',
-    navFragile: 'Robuustheidscontroles',
+    navFragile: 'Robuustheidstoetsen',
     navRead: 'Discussie en conclusie',
     heroBrand: 'Take Watanabe · Philosophy, Politics and Economics · Vrije Universiteit Amsterdam',
     heroTitle: 'Economische autonomie van vrouwen in de Nederlandse Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
@@ -248,20 +254,21 @@ export const translations = {
       '2,84 procentpunt: geschatte kleinere geletterdheidskloof in 1750 per één standaarddeviatie hogere VOC-vertrekintensiteit, met geografische controles',
     heroEstimateNumber: '2,84',
     heroEstimateUnit: 'procentpunt',
-    heroEstimateLabel: 'Afname van de geletterdheidskloof per 1 SD meer vertrek van zeevarenden',
-    heroEstimateQualifier: '1750 · gecontroleerd voor lengte- en breedtegraad',
+    heroEstimateLabel: 'Afname van de geletterdheidskloof per één standaarddeviatie meer vertrek van zeevarenden',
+    heroEstimateQualifier: '1750 · rekening houdend met lengte- en breedtegraad',
     heroFemaleAria:
       '99,4 procent van het behandelingseffect op de genderkloof in 1750 wordt verklaard door vrouwelijke geletterdheid',
+    heroFemaleNumber: '99,4%',
     heroFemaleLabel: 'van het behandelingseffect via vrouwelijke geletterdheid',
     heroSampleAria: '32 steden en 96 stadsjaren in de steekproef',
     heroSampleLabel: 'steden · 96 stadsjaren',
-    heroCaveatAria: 'De resultaten zijn zeer robuust voor controles op bevolkingsgroei en minder robuust voor een leave-one-outtoets',
+    heroCaveatAria: 'De resultaten zijn zeer robuust wanneer rekening wordt gehouden met bevolkingsgroei en minder robuust bij een weglaattoets',
     heroCaveatLabel: 'Robuustheid',
-    heroCaveatText: 'De resultaten zijn zeer robuust voor controles op bevolkingsgroei en minder robuust voor een leave-one-outtoets.',
+    heroCaveatText: 'De resultaten zijn zeer robuust wanneer rekening wordt gehouden met bevolkingsgroei en minder robuust bij een weglaattoets.',
     settingEyebrow: 'Inleiding',
-    settingH2: 'De opkomst van de Nederlandse Republiek en maritieme handel',
+    settingH2: 'De opkomst van de Republiek en overzeese handel',
     settingP1:
-      'De opkomst van de Nederlandse Republiek in de zeventiende eeuw betekende een sterke toename van het relatieve belang van de maritieme handelssector. De lange reizen met hoge sterfte van de Verenigde Oostindische Compagnie (VOC) waren nodig om zowel de onafhankelijkheidsoorlog tegen het Spaanse Rijk te financieren als de Spaanse en Portugese dominantie te bestrijden, en vormden later de basis voor de Nederlandse Gouden Eeuw.',
+      'De opkomst van de Republiek in de zeventiende eeuw ging hand in hand met de bloei van de overzeese handel. Deze bloei werd gedreven door lange en gevaarlijke reizen uitgevoerd door de Verenigde Oostindische Compagnie (VOC), die nodig waren om zowel de onafhankelijkheidsoorlog tegen het Spaanse Rijk te financieren als de Spaanse en Portugese dominantie in Azië te bestrijden. De opkomst van de VOC vormde uiteindelijk de basis voor de Gouden Eeuw.',
     globeAlt:
       'Interactieve wereldbol met gereconstrueerde vaarroutes en gedocumenteerde reizen van de VOC',
     globeCaption:
@@ -280,9 +287,9 @@ export const translations = {
     globeStopsLabel: 'Gedocumenteerde plaatsen',
     globeSourcesLabel: 'Historische bronnen',
     globeReconstruction:
-      'Routenotitie: gedocumenteerde plaatsen zijn verbonden via gereconstrueerde vaarpunten op basis van historische routes en heersende winden; de lijn is geen bewaard dag-tot-dagtraject.',
+      'Toelichting op de route: gedocumenteerde plaatsen zijn verbonden via gereconstrueerde vaarpunten op basis van historische routes en heersende winden; de lijn geeft geen bewaard traject van dag tot dag weer.',
     globeEthics:
-      'Deze netwerken verbonden handel en oorlog met een compagnie die sterk betrokken was bij extractieve activiteiten buiten Europa.',
+      'Deze netwerken verbonden handel en oorlog met een compagnie die buiten Europa sterk betrokken was bij economische uitbuiting.',
     globeRouteVocMain: 'Republiek naar Batavia',
     globeRouteVocMainDesc:
       'De voornaamste uitgaande VOC-verbinding rondde de Kaap en gebruikte daarna westenwinden over de zuidelijke Indische Oceaan, voordat zij naar Straat Soenda en Batavia afboog.',
@@ -310,29 +317,29 @@ export const translations = {
     globePlaceAmbon: 'Ambon',
     globePlaceBanda: 'Banda-eilanden',
     settingP2:
-      'De prominente positie van de VOC in de economie leidde zowel tot “het vertrek van duizenden mannen van huwbare leeftijd” als tot achtergebleven gehuwde vrouwen (Schmidt, 2025, p. 20). Reisverslagen “portretteerden vroegmoderne Nederlandse vrouwen als economisch actief, ondernemend, onafhankelijk en dominant” ten opzichte van vrouwen in andere landen (Schmidt, 2025, p. 17).',
+      'De prominente rol van de VOC in de economie leidde tot het vertrek van duizenden mannen van huwbare leeftijd en tot gehuwde vrouwen die achterbleven (Schmidt, 2025, p. 20). Reisverslagen beschreven vroegmoderne Nederlandse vrouwen als economisch actief, ondernemend, onafhankelijk en dominant ten opzichte van vrouwen in andere landen (Schmidt, 2025, p. 17).',
     settingP3:
       'Voor zover ik weet bestaat er geen kwantitatief onderzoek naar waarom de economische autonomie van Nederlandse vrouwen destijds groter leek dan in andere landen. Bovendien onderzocht geen van de besproken studies de effecten van langdurige afwezigheid van mannen in vredestijd in plaats van oorlogstijd.',
     questionEyebrow: 'Onderzoeksvraag',
     questionH2: 'Maritiem veroorzaakte afwezigheid van mannen en economische autonomie van vrouwen',
     questionPull:
-      'Hoe beïnvloedde de langdurige en permanente afwezigheid van mannen, veroorzaakt door reizen van de Verenigde Oostindische Compagnie, de economische autonomie van vrouwen in de vroegmoderne Nederlandse Republiek?',
+      'Hoe beïnvloedde de langdurige en permanente afwezigheid van mannen, veroorzaakt door reizen van de Verenigde Oostindische Compagnie, de economische autonomie van vrouwen in de vroegmoderne Republiek?',
     questionP1Html:
-      'Dit vormt een interessant historisch <strong>natuurlijk experiment</strong> om vanuit genderperspectief te bestuderen. Hoewel de algemene effecten op de economische welvaart van de Nederlandse Republiek bekend zijn, is weinig bekend over gemarginaliseerde groepen in eigen land; langs de genderdimensie vormen Nederlandse vrouwen de groep van belang.',
+      'Dit vormt een interessant historisch <strong>natuurlijk experiment</strong> om langs genderlijnen te bestuderen. Hoewel de bijdrage van de VOC aan de bloei van de Republiek vaststaat, is er weinig bekend over de positie van onderbelichte groepen in eigen land, waaronder Nederlandse vrouwen die in de voorheen katholieke Nederlanden weinig te zeggen hadden in brede zin.',
     questionPreviewHtml:
-      'Met een continue difference-in-differences-opzet benut ik variatie in de geletterdheidskloof en het vertrek van zeevarenden tussen Nederlandse steden als maatstaven voor respectievelijk economische autonomie van vrouwen en maritiem veroorzaakte afwezigheid van mannen.',
+      'Met een continue verschil-in-verschillenopzet benut ik verschillen tussen Nederlandse steden in de geletterdheidskloof en het vertrek van zeevarenden. Deze dienen als maatstaven voor respectievelijk de economische autonomie van vrouwen en de maritiem veroorzaakte afwezigheid van mannen.',
     observeEyebrow: 'Conceptueel kader en databronnen',
     observeH2: 'De geletterdheidskloof als maatstaf voor economische autonomie',
     observeP1Html:
-      'Om de economische autonomie van vrouwen in de Nederlandse Republiek te analyseren, gebruik ik het verschil tussen vrouwelijke en mannelijke geletterdheid als een <strong>waarneembare proxy-uitkomst</strong>, die volgens mij voldoende representatief is voor economische autonomie. De geletterdheidskloof signaleert de relatieve economische positie van vrouwen en mannen en vormt daarmee een ruwe maar voldoende proxy voor economische autonomie.',
+      'Om de economische autonomie van vrouwen in de Republiek te analyseren, gebruik ik het verschil tussen vrouwelijke en mannelijke geletterdheid als een <strong>waarneembare proxyvariabele</strong>. De geletterdheidskloof weerspiegelt de relatieve economische positie van vrouwen en mannen en biedt daarmee een ruwe, maar bruikbare benadering van economische autonomie.',
     observeP2:
       'De gegevens over vrouwelijke en mannelijke geletterdheid zijn afkomstig van Akçomak, Webbink en ter Weel (2016). Zij aggregeerden geletterdheid per stad door handtekeningen en eenvoudige merktekens van bruiden en bruidegoms in de Amsterdamse huwelijksregisters te onderscheiden. De voormalige woonplaats werd geregistreerd, waardoor geletterdheid kon worden herleid tot de herkomststeden van bruid en bruidegom.',
     observeP3:
-      'Kunnen lezen en schrijven was essentieel voor hogere functies in de maritieme sector, die overeenkomstig hogere lonen opleverden. Meer algemeen, en specifiek voor vrouwen, hielp geletterdheid vrouwen ook bij het leiden of overnemen van het bedrijf van een ouder of echtgenoot.',
+      'Kunnen lezen en schrijven was essentieel voor hogere functies in de maritieme sector, die hogere lonen opleverden. Voor vrouwen hielp geletterdheid bovendien bij het leiden of overnemen van het bedrijf van een ouder of echtgenoot.',
     gapAlt:
       'Lijndiagram van gemiddelde mannelijke en vrouwelijke geletterdheid van 1600 tot 1750; de gearceerde genderkloof vernauwt van 33,2 naar 25,6 procentpunten',
     gapCaption:
-      'De 32 Nederlandse steden beginnen met een aanzienlijke geletterdheidskloof, die in de tijd vooral kleiner wordt door een stijging van de gemiddelde vrouwelijke geletterdheid en een daling van de spreiding daarvan tussen steden, sneller dan de gelijktijdige stijging van mannelijke geletterdheid.',
+      'De 32 Nederlandse steden kenden aanvankelijk een aanzienlijke geletterdheidskloof. Die werd vooral kleiner doordat de gemiddelde vrouwelijke geletterdheid steeg en de spreiding daarvan tussen steden afnam, terwijl de mannelijke geletterdheid minder snel steeg.',
     gapX: 'Jaar',
     gapY: 'Gemiddelde geletterdheid (%)',
     gapMale: 'Mannelijke geletterdheid',
@@ -342,99 +349,104 @@ export const translations = {
     gapNote: 'De gearceerde kloof vernauwt over tijd',
     gapTooltipGap: 'Genderkloof',
     intensityEyebrow: 'VOC-vertrekintensiteit',
-    intensityH2: 'Data over geletterdheid, VOC-werknemers en stadsbevolking',
+    intensityH2: 'Gegevens over geletterdheid, VOC-werknemers en stadsbevolking',
     intensityPHtml:
-      'Om een continue blootstellingsmaat voor maritiem veroorzaakte afwezigheid van mannen te construeren, gebruik ik de verrijkte <strong>VOC-opvarendendataset</strong>, opgebouwd uit 774.200 monsterrolregistraties van VOC-zeevarenden van 1633 tot 1794 (Petram et al., 2024). Ik filter op gedisambigueerde personen met een geregistreerde plaats en datum van eerste vertrek. Het vertrek van zeevarenden wordt per stad samengevoegd van 1633 tot 1750 en genormaliseerd ten opzichte van de oorspronkelijke omvang van de stad.',
+      'Om een continue blootstellingsmaat voor maritiem veroorzaakte afwezigheid van mannen samen te stellen, gebruik ik het verrijkte <strong>VOC-opvarendenbestand</strong>, opgebouwd uit 774.200 monsterrolregistraties van VOC-zeevarenden van 1633 tot 1794 (Petram et al., 2024). Ik selecteer eenduidig geïdentificeerde personen met een geregistreerde plaats en datum van eerste vertrek. Het vertrek van zeevarenden wordt per stad samengevoegd van 1633 tot 1750 en genormaliseerd ten opzichte van de oorspronkelijke omvang van de stad.',
     mapAlt: 'Gestileerde Republiekkaart naar thesis-GIS, met Zuiderzee en Zeeuwse eilanden; cirkelgrootte toont VOC-vertrekintensiteit, Rotterdam gemarkeerd',
     mapCaption:
-      'De geografische spreiding van de 32 steden toont dat de steekproef grotendeels gelijkmatig over de Nederlandse Republiek is verdeeld. Vooral de geletterdheidscijfers van Amsterdam ontbreken. Toch bevat de steekproef voldoende westelijke steden, zoals Rotterdam en Leiden, die van de VOC profiteerden.',
+      'De geografische spreiding van de 32 steden toont dat de steekproef grotendeels gelijkmatig over de Republiek is verdeeld. Vooral de geletterdheidscijfers van Amsterdam ontbreken. Toch bevat de steekproef voldoende westelijke steden, zoals Rotterdam en Leiden, die van de VOC profiteerden.',
     intensityLegend: 'VOC-vertrekintensiteit',
     mapLower: 'Lager',
     mapHigher: 'Hoger',
     mapTooltipIntensity: 'VOC-vertrekintensiteit',
     histAlt: 'Histogram van VOC-vertrekintensiteit over 32 Nederlandse steden, met Rotterdam in de rechterstaart',
     histCaption:
-      'Weinig van de 32 steden kunnen als echte controle-eenheid of vrijwel onbehandeld worden beschouwd. Alle steden kennen over een periode van een eeuw enig vertrek van zeevarenden, waardoor binaire indelingen in behandelde en onbehandelde steden niet haalbaar zijn. Rotterdam is een opvallende uitschieter die de verdeling rechtsscheef maakt.',
+      'Weinig van de 32 steden kunnen als echte vergelijkingseenheid of vrijwel onbehandeld worden beschouwd. Alle steden kennen over een periode van een eeuw enig vertrek van zeevarenden, waardoor binaire indelingen in behandelde en onbehandelde steden niet haalbaar zijn. Rotterdam is een opvallende uitschieter die de verdeling rechtsscheef maakt.',
     histX: 'VOC-vertrekintensiteit (vertrekken ÷ bevolking 1600)',
     histY: 'Aantal steden',
     histCities: 'Steden',
-    histRotterdam: 'Rotterdam-bin',
-    histTooltipCount: 'Steden in bin',
+    histRotterdam: 'Klasse met Rotterdam',
+    histTooltipCount: 'Steden in deze klasse',
     compareEyebrow: 'Maritiem veroorzaakte afwezigheid van mannen en de geletterdheidskloof',
     compareH2: 'Empirische strategie',
     compareP1:
-      'Om het causale effect van het vertrek van zeevarenden op de geletterdheidskloof te schatten, gebruik ik een difference-in-differences-opzet die variatie in het aantal vertrekken tussen steden benut. Door veranderingen vóór en na het voorbehandelingsjaar 1600 over twee behandelingsperioden te vergelijken, kan een drieperiodenopzet het gemiddelde behandelingseffect identificeren.',
+      'Om het causale effect van het vertrek van zeevarenden op de geletterdheidskloof te schatten, gebruik ik een verschil-in-verschillenopzet die verschillen in het aantal vertrekken tussen steden benut. Door veranderingen vóór en na het voorbehandelingsjaar 1600 over twee behandelingsperioden te vergelijken, kan een drieperiodenopzet het gemiddelde behandelingseffect vaststellen.',
     schematicAria: 'Schematische weergave van continue DiD',
     schematicOutcome: 'Uitkomst',
     schematicOutcomeBody: 'Verandering in geletterdheidskloof (vrouw − man)',
     schematicExposure: 'Blootstelling',
     schematicExposureBody: 'VOC-vertrekken ÷ bevolking 1600',
     schematicHeld: 'Constant gehouden',
-    schematicHeldBody: 'Stad-FE, jaar-FE, lon/lat × jaar',
+    schematicHeldBody: 'Vaste stads- en jaareffecten, lengte-/breedtegraad × jaar',
     compareP2:
-      'In tegenstelling tot de canonieke opzet gebruik ik een continue behandelingsvariabele, zodat vergelijkingen verder gaan dan een binaire indeling in behandelde en onbehandelde steden. Een continue difference-in-differences-analyse vergelijkt behandelingsintensiteiten en maakt analyse mogelijk wanneer elke stad ten minste minimaal aan de VOC is blootgesteld.',
+      'In tegenstelling tot de gebruikelijke opzet gebruik ik een continue behandelingsvariabele, zodat de vergelijking niet beperkt blijft tot een tweedeling tussen behandelde en onbehandelde steden. Een continue verschil-in-verschillenanalyse vergelijkt behandelingsintensiteiten en maakt de analyse mogelijk wanneer elke stad in enige mate aan de VOC is blootgesteld.',
     compareP3:
-      'Om de aanname van conditionele parallelle trends aannemelijker te maken, laat ik lengte- en breedtegraad interageren met vaste jaareffecten om verschillende trends tussen steden te beheersen. Ook controleer ik voor bevolkingsgroei om de invloed van maritieme commerciële ontwikkeling op de geletterdheidskloof mee te nemen.',
-    methodsSummary: 'Methodennotitie: TWFE-vergelijking & teken van de kloof',
+      'Om de aanname van conditionele parallelle trends aannemelijker te maken, neem ik interacties op tussen lengte- en breedtegraad en vaste jaareffecten. Zo houd ik rekening met uiteenlopende trends tussen steden. Ook houd ik rekening met bevolkingsgroei om de invloed van maritieme commerciële ontwikkeling op de geletterdheidskloof mee te nemen.',
+    methodsSummary: 'Methodennotitie: TWFE-vergelijking en teken van de kloof',
     methodsP1:
-      'Basisvorm: geletterdheidskloofᵢ,ₜ = β (Dᵢ × Postₜ) + stad-FE + jaar-FE + controles × jaar + εᵢ,ₜ. Een flexibele vorm vervangt Post door jaarspecifieke interacties voor 1675 en 1750 (1600 als basislijn). Standaardfouten zijn geclusterd per stad.',
+      'Basisvorm: geletterdheidskloofᵢ,ₜ = β (Dᵢ × Postₜ) + stad-FE + jaar-FE + controlevariabelen × jaar + εᵢ,ₜ. Een flexibele vorm vervangt Post door jaarspecifieke interacties voor 1675 en 1750 (1600 als basislijn). Standaardfouten zijn geclusterd per stad.',
     methodsP2:
       'Kloof = vrouwelijke − mannelijke geletterdheid. Positieve coëfficiënten worden besproken als een verkleining van het nadeel voor vrouwen (de kloof minder negatief / gelijker), volgens de conventie van de scriptie.',
     estimatesEyebrow: 'Maritiem veroorzaakte afwezigheid van mannen en de geletterdheidskloof',
     estimatesH2: 'Resultaten',
     estimatesPHtml:
-      'Wanneer de effecten van het vertrek van zeevarenden tussen behandelingsperioden mogen variëren, is het geschatte effect in 1750 sterker dan in de basisspecificatie en statistisch significant op het 5%-niveau met controles voor lengte- en breedtegraad. Een stad waar een equivalent van 25% van de bevolking van 1600 naar zee vertrok—één standaarddeviatie meer behandeling—kende een <strong>afname van 2,84 procentpunt</strong> in de geletterdheidskloof.',
-    statGapLabel: 'Procentpunt afname in de geletterdheidskloof per 1 SD meer behandeling',
+      'Wanneer de effecten van het vertrek van zeevarenden tussen behandelingsperioden mogen variëren, is het geschatte effect in 1750 sterker dan in de basisspecificatie en statistisch significant op het 5%-niveau, waarbij rekening is gehouden met lengte- en breedtegraad. Een vertrek ter grootte van 25% van de bevolking in 1600—gelijk aan één standaarddeviatie hogere behandelingsintensiteit—hing samen met een <strong>afname van 2,84 procentpunt</strong> in de geletterdheidskloof.',
+    statGapNumber: '2,84',
+    statGapLabel: 'Procentpunt afname in de geletterdheidskloof per één standaarddeviatie hogere behandelingsintensiteit',
+    statFemaleNumber: '99,4%',
     statFemaleLabel: 'Van het behandelingseffect in 1750 verklaard door vrouwelijke geletterdheid',
     statNLabel: 'Nederlandse steden · 96 stadsjaren',
-    eventAlt: 'Event-study van VOC-vertrekintensiteit-interacties voor 1600, 1675 en 1750',
+    eventAlt: 'Eventstudie van interacties met de VOC-vertrekintensiteit voor 1600, 1675 en 1750',
     eventCaption:
-      'Puntschattingen met 95%-betrouwbaarheidsintervallen van de flexibele specificaties met controles voor lengte- en breedtegraad, getoond met en zonder controles voor bevolkingsgroei.',
+      'Puntschattingen met 95%-betrouwbaarheidsintervallen van de flexibele specificaties, waarbij rekening is gehouden met lengte- en breedtegraad en, afhankelijk van de specificatie, met bevolkingsgroei.',
     esX: 'Jaar',
     esY: 'Geletterdheidskloof (pp)',
-    esNote: 'Voorkeur-flexibele TWFE · lon/lat × jaar-FE · stad-geclusterde 95%-BI’s',
+    esNote: 'Flexibele TWFE-voorkeursspecificatie · lengte-/breedtegraad × vaste jaareffecten · per stad geclusterde 95%-BI’s',
     esBase: ' (basis)',
     esTooltipCoef: 'Schatting',
+    esTooltipInterval: '95%-BI',
     decompIntro: 'Samenstelling van de geschatte geletterdheidskloof in 1750:',
     decompAria: 'Vrouwelijke versus mannelijke geletterdheid',
     decompFemaleBtn: 'Vrouwelijke geletterdheid',
     decompMaleBtn: 'Mannelijke geletterdheid',
+    decompFemaleNumber: '+11,30 pp',
+    decompMaleNumber: '−0,07 pp',
     decompFemaleP:
       'De coëfficiënt voor vrouwelijke geletterdheid is in 1750 statistisch significant op het 5%-niveau en verklaart 99,4% van het behandelingseffect op de genderkloof.',
     decompMaleP:
-      'Coëfficiënten voor mannelijke geletterdheid zijn in geen enkele behandelingsperiode statistisch significant, wat suggereert dat vrouwelijke geletterdheid de enige significante drijvende kracht achter de sluiting van de geletterdheidskloof is.',
-    fragileEyebrow: 'Robuustheidscontroles',
-    fragileH2: 'Robuustheidscontroles en beperkingen',
+      'Coëfficiënten voor mannelijke geletterdheid zijn in geen enkele behandelingsperiode statistisch significant. Dit wijst erop dat de kleinere geletterdheidskloof uitsluitend samenhangt met de toename van vrouwelijke geletterdheid.',
+    fragileEyebrow: 'Robuustheidstoetsen',
+    fragileH2: 'Robuustheidstoetsen en beperkingen',
     fragilePHtml:
-      'Na het weglaten van Rotterdam, een grote uitschieter in de verdeling van behandelingsintensiteit, worden alle behandelingseffecten statistisch insignificant met veel grotere standaardfouten. Dit bevestigt dat de geschatte effecten sterk door Rotterdam worden gedreven. Dit maakt de eerdere resultaten niet noodzakelijk ongeldig, maar levert door beperkte databeschikbaarheid <strong>weinig generaliseerbare conclusies</strong> op over de werkelijke omvang van het gemiddelde behandelingseffect.',
+      'Na het weglaten van Rotterdam, een grote uitschieter in de verdeling van de behandelingsintensiteit, zijn alle behandelingseffecten niet langer statistisch significant en nemen de standaardfouten sterk toe. De geschatte effecten zijn dus in belangrijke mate aan Rotterdam toe te schrijven. Dit maakt de eerdere resultaten niet noodzakelijk ongeldig, maar door de beperkte beschikbaarheid van gegevens zijn <strong>nauwelijks algemeen geldende conclusies</strong> mogelijk over de werkelijke omvang van het gemiddelde behandelingseffect.',
     limit1Html:
-      '<strong>Kleine steekproef.</strong> De steekproef bevat 32 Nederlandse steden, waardoor steun voor de aanname van conditionele parallelle trends moeilijk vast te stellen is.',
+      '<strong>Kleine steekproef.</strong> De steekproef bevat 32 Nederlandse steden, waardoor de aanname van conditionele parallelle trends moeilijk te onderbouwen is.',
     limit2Html:
-      '<strong>Gebrek aan voorbehandelingsperioden.</strong> Pre-trendtoetsen zijn onmogelijk, waardoor moeilijk kan worden betoogd dat de parallelle-trendsaanname niet wordt geschonden.',
+      '<strong>Gebrek aan voorbehandelingsperioden.</strong> Toetsen op voorafgaande trends zijn onmogelijk, waardoor moeilijk kan worden betoogd dat de parallelle-trendsaanname niet wordt geschonden.',
     limit3Html:
-      '<strong>Beperkt aantal perioden.</strong> Met meer perioden voor geletterdheid en het vertrek van zeevarenden zouden heterogeniteitsrobuuste difference-in-differences-schatters nodig zijn om te beoordelen of de bevindingen standhouden.',
+      '<strong>Beperkt aantal perioden.</strong> Met meer perioden voor geletterdheid en het vertrek van zeevarenden zouden heterogeniteitsrobuuste verschil-in-verschillenschatters nodig zijn om te beoordelen of de bevindingen standhouden.',
     limit4Html:
-      '<strong>Commerciële ontwikkeling.</strong> Bevolkingsgroei wordt gebruikt om de invloed van maritieme commerciële ontwikkeling te beheersen, maar consistente statistieken voor bevolkingsgroei vóór behandeling bestaan niet.',
+      '<strong>Commerciële ontwikkeling.</strong> In de analyse wordt rekening gehouden met bevolkingsgroei om de invloed van maritieme commerciële ontwikkeling te ondervangen, maar vergelijkbare statistieken over bevolkingsgroei vóór behandeling bestaan niet.',
     limit5Html:
-      '<strong>Externe validiteit.</strong> De data bevatten alleen Nederlandse steden, zodat de bevindingen niet tonen of het effect van zeevaardersvertrek robuust is voor verschillen in de religieuze status van steden.',
+      '<strong>Externe validiteit.</strong> De gegevens bevatten alleen Nederlandse steden. Daardoor blijkt niet of verschillen in de religieuze status van steden van invloed zijn op het geschatte effect van het vertrek van zeevarenden.',
     readEyebrow: 'Discussie en conclusie',
     readH2: 'Discussie en conclusie',
     readPull:
-      'De bevindingen leveren suggestief bewijs voor een opvallende schok in de volwassen sekseratio, die gevolgen had voor binnenlandse huwelijks- en arbeidsmarkten en vrouwen aanmoedigde menselijk kapitaal te verwerven.',
+      'De bevindingen wijzen op een opvallende verandering in de verhouding tussen volwassen mannen en vrouwen. Die werkte door op binnenlandse huwelijks- en arbeidsmarkten en zette vrouwen ertoe aan in menselijk kapitaal te investeren.',
     readP1:
-      'Deze scriptie vindt dat het vertrek van VOC-zeevarenden een significant sluitend effect heeft op de geletterdheidskloof. Dit effect wordt bijna volledig gedreven door stijgingen in vrouwelijke geletterdheid in plaats van dalingen in mannelijke geletterdheid. Het resultaat is robuust voor bevolkingsgroei na behandeling, maar veel minder robuust wanneer Rotterdam wordt weggelaten.',
+      'Deze scriptie vindt dat het vertrek van VOC-zeevarenden de geletterdheidskloof significant verkleint. Dit effect is bijna volledig toe te schrijven aan een stijging van de vrouwelijke geletterdheid en niet aan een daling van de mannelijke geletterdheid. Het resultaat is robuust wanneer rekening wordt gehouden met bevolkingsgroei na behandeling, maar veel minder robuust wanneer Rotterdam wordt weggelaten.',
     readP2:
-      'Deze scriptie opent ook normatieve discussies over kolonialisme en gemarginaliseerde groepen. Gemarginaliseerde groepen in het koloniale tijdperk bestonden niet alleen in gekoloniseerde gebieden, maar ook in koloniserende staten. De normatieve beoordeling hangt af van de vraag hoe los de binnenlandse effecten van een koloniale schok moeten worden gezien van de onderdrukkende effecten van kolonialisme in het buitenland.',
+      'Deze scriptie opent ook een normatieve discussie over kolonialisme en onderbelichte groepen. Zulke groepen bestonden in het koloniale tijdperk niet alleen in gekoloniseerde gebieden, maar ook in koloniserende landen. De normatieve beoordeling hangt af van de vraag of en in hoeverre binnenlandse gevolgen van een koloniale schok afzonderlijk kunnen worden beoordeeld van de onderdrukkende gevolgen van kolonialisme in het buitenland.',
     readP3:
-      'Historische schokken kunnen vergelijkbaar zijn met beleidsinterventies: grootschalige beleidsveranderingen die vrouwen ten goede komen door bijvoorbeeld arbeids- en huwelijksmarkten te beïnvloeden, kunnen hun economische uitkomsten verbeteren. Historische gebeurtenissen kunnen zo lessen bieden voor het beleid van vandaag.',
+      'Historische schokken kunnen overeenkomsten vertonen met beleidsingrepen. Grootschalige beleidsveranderingen die vrouwen ten goede komen door bijvoorbeeld arbeids- en huwelijksmarkten te beïnvloeden, kunnen hun economische positie verbeteren. Historische gebeurtenissen kunnen zo lessen bieden voor het huidige beleid.',
     readP4:
-      'Over het geheel genomen levert deze scriptie waardevolle bijdragen aan de economisch-historische literatuur, implicaties voor normatieve discussies buiten wat doorgaans binnen de economische wetenschap wordt beschouwd en indirecte inzichten voor hedendaags beleidsontwerp. Door een historische context te bestuderen, verbindt deze scriptie zich met belangrijke filosofische en beleidsdebatten van vandaag.',
-    footerTitle: 'Economische autonomie van vrouwen in de Nederlandse Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
+      'Over het geheel genomen draagt deze scriptie bij aan de economisch-historische literatuur, aan normatieve discussies die verder reiken dan de gebruikelijke economische analyse en aan de vormgeving van hedendaags beleid. Door deze historische context te bestuderen, sluit de scriptie aan bij belangrijke filosofische en beleidsdebatten van vandaag.',
+    footerTitle: 'Economische autonomie van vrouwen in de Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
     footerByline: 'Take Watanabe · Philosophy, Politics and Economics · Vrije Universiteit Amsterdam · 22 mei 2026',
     footerPdf: 'Scriptie-PDF',
     footerTop: 'Terug naar boven',
     footerRefs: 'Bronnen',
-    footerCiteNote: 'Bronnen die in dit verhaal worden genoemd.',
+    footerCiteNote: 'Bronnen die op deze website worden genoemd.',
   },
 };
 

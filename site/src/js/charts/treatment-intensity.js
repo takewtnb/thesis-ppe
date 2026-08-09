@@ -149,7 +149,7 @@ export async function renderTreatmentIntensity(mount, lang, t) {
       'text-anchor': 'middle',
       class: 'tick',
     });
-    tick.textContent = x.toFixed(1);
+    tick.textContent = fmt(x, lang, 1);
     svg.appendChild(tick);
   }
 
