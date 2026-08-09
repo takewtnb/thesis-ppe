@@ -8,7 +8,7 @@ export const translations = {
     langAria: 'Language',
     navMenuOpen: 'Open section menu',
     navMenuClose: 'Close section menu',
-    navBrand: 'Take Watanabe · Philosophy, Politics and Economics',
+    navBrand: 'Take Watanabe',
     navTitle: 'Women’s economic autonomy in the Dutch Republic and maritime-induced male absence',
     navSetting: 'Introduction',
     navQuestion: 'Research question',
@@ -18,7 +18,7 @@ export const translations = {
     navEstimates: 'Results',
     navFragile: 'Robustness checks',
     navRead: 'Discussion and conclusion',
-    heroBrand: 'Take Watanabe · Philosophy, Politics and Economics · Vrije Universiteit Amsterdam',
+    heroBrand: 'Take Watanabe',
     heroTitle: 'Women’s economic autonomy in the Dutch Republic and maritime-induced male absence',
     heroLede:
       'This thesis provides supportive evidence for the hypothesis that women’s economic autonomy in the Dutch Republic was positively affected by maritime-induced male absence.',
@@ -231,7 +231,7 @@ export const translations = {
     langAria: 'Taal',
     navMenuOpen: 'Open sectiemenu',
     navMenuClose: 'Sluit sectiemenu',
-    navBrand: 'Take Watanabe · Philosophy, Politics and Economics',
+    navBrand: 'Take Watanabe',
     navTitle:
       'Economische autonomie van vrouwen in de Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
     navSetting: 'Inleiding',
@@ -242,7 +242,7 @@ export const translations = {
     navEstimates: 'Resultaten',
     navFragile: 'Robuustheidstoetsen',
     navRead: 'Discussie en conclusie',
-    heroBrand: 'Take Watanabe · Philosophy, Politics and Economics · Vrije Universiteit Amsterdam',
+    heroBrand: 'Take Watanabe',
     heroTitle: 'Economische autonomie van vrouwen in de Nederlandse Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
     heroLede:
       'Deze scriptie levert ondersteunend bewijs voor de hypothese dat de economische autonomie van vrouwen in de Nederlandse Republiek positief werd beïnvloed door maritiem veroorzaakte afwezigheid van mannen.',
