@@ -327,7 +327,7 @@ export const translations = {
     questionP1Html:
       'Dit vormt een interessant historisch <strong>natuurlijk experiment</strong> om langs genderlijnen te bestuderen. Hoewel de bijdrage van de VOC aan de bloei van de Republiek vaststaat, is er weinig bekend over de positie van onderbelichte groepen in eigen land, waaronder Nederlandse vrouwen die in de voorheen katholieke Nederlanden weinig te zeggen hadden in brede zin.',
     questionPreviewHtml:
-      'Met een continue verschil-in-verschillenopzet benut ik verschillen tussen Nederlandse steden in de geletterdheidskloof en het vertrek van zeevarenden. Deze dienen als maatstaven voor respectievelijk de economische autonomie van vrouwen en de maritiem veroorzaakte afwezigheid van mannen.',
+      'Met een continue difference-in-differences-opzet benut ik verschillen tussen Nederlandse steden in de geletterdheidskloof en het vertrek van zeevarenden. Deze dienen als maatstaven voor respectievelijk de economische autonomie van vrouwen en de maritiem veroorzaakte afwezigheid van mannen.',
     observeEyebrow: 'Conceptueel kader en databronnen',
     observeH2: 'De geletterdheidskloof als maatstaf voor economische autonomie',
     observeP1Html:
@@ -370,7 +370,7 @@ export const translations = {
     compareEyebrow: 'Maritiem veroorzaakte afwezigheid van mannen en de geletterdheidskloof',
     compareH2: 'Empirische strategie',
     compareP1:
-      'Om het causale effect van het vertrek van zeevarenden op de geletterdheidskloof te schatten, gebruik ik een verschil-in-verschillenopzet die verschillen in het aantal vertrekken tussen steden benut. Door veranderingen vóór en na het voorbehandelingsjaar 1600 over twee behandelingsperioden te vergelijken, kan een drieperiodenopzet het gemiddelde behandelingseffect vaststellen.',
+      'Om het causale effect van het vertrek van zeevarenden op de geletterdheidskloof te schatten, gebruik ik een difference-in-differences-opzet die verschillen in het aantal vertrekken tussen steden benut. Door veranderingen vóór en na het voorbehandelingsjaar 1600 over twee behandelingsperioden te vergelijken, kan een drieperiodenopzet het gemiddelde behandelingseffect vaststellen.',
     schematicAria: 'Schematische weergave van continue DiD',
     schematicOutcome: 'Uitkomst',
     schematicOutcomeBody: 'Verandering in geletterdheidskloof (vrouw − man)',
@@ -379,9 +379,9 @@ export const translations = {
     schematicHeld: 'Constant gehouden',
     schematicHeldBody: 'Vaste stads- en jaareffecten, lengte-/breedtegraad × jaar',
     compareP2:
-      'In tegenstelling tot de gebruikelijke opzet gebruik ik een continue behandelingsvariabele, zodat de vergelijking niet beperkt blijft tot een tweedeling tussen behandelde en onbehandelde steden. Een continue verschil-in-verschillenanalyse vergelijkt behandelingsintensiteiten en maakt de analyse mogelijk wanneer elke stad in enige mate aan de VOC is blootgesteld.',
+      'In tegenstelling tot de gebruikelijke opzet gebruik ik een continue behandelingsvariabele, zodat de vergelijking niet beperkt blijft tot een tweedeling tussen behandelde en onbehandelde steden. Een continue difference-in-differences-analyse vergelijkt behandelingsintensiteiten en maakt bovendien een analyse mogelijk in het geval waarin elke stad in enige mate aan de VOC is blootgesteld.',
     compareP3:
-      'Om de aanname van conditionele parallelle trends aannemelijker te maken, neem ik interacties op tussen lengte- en breedtegraad en vaste jaareffecten. Zo houd ik rekening met uiteenlopende trends tussen steden. Ook houd ik rekening met bevolkingsgroei om de invloed van maritieme commerciële ontwikkeling op de geletterdheidskloof mee te nemen.',
+      'Om de aanname van conditionele parallelle trends aannemelijker te maken, neem ik interacties op tussen lengte- en breedtegraad en vaste jaareffecten. Zo houd ik rekening met uiteenlopende trends tussen steden. Ook houd ik rekening met bevolkingsgroei om de invloed van maritiem-gedreven stedelijke ontwikkeling op de geletterdheidskloof mee te nemen.',
     methodsSummary: 'Methodennotitie: TWFE-vergelijking en teken van de kloof',
     methodsP1:
       'Basisvorm: geletterdheidskloofᵢ,ₜ = β (Dᵢ × Postₜ) + stad-FE + jaar-FE + controlevariabelen × jaar + εᵢ,ₜ. Een flexibele vorm vervangt Post door jaarspecifieke interacties voor 1675 en 1750 (1600 als basislijn). Standaardfouten zijn geclusterd per stad.',
@@ -424,9 +424,9 @@ export const translations = {
     limit2Html:
       '<strong>Gebrek aan voorbehandelingsperioden.</strong> Toetsen op voorafgaande trends zijn onmogelijk, waardoor moeilijk kan worden betoogd dat de parallelle-trendsaanname niet wordt geschonden.',
     limit3Html:
-      '<strong>Beperkt aantal perioden.</strong> Met meer perioden voor geletterdheid en het vertrek van zeevarenden zouden heterogeniteitsrobuuste verschil-in-verschillenschatters nodig zijn om te beoordelen of de bevindingen standhouden.',
+      '<strong>Beperkt aantal perioden.</strong> Met meer perioden voor geletterdheid en het vertrek van zeevarenden zouden heterogeniteitsrobuuste difference-in-differences-schatters nodig zijn om te beoordelen of de bevindingen standhouden.',
     limit4Html:
-      '<strong>Commerciële ontwikkeling.</strong> In de analyse wordt rekening gehouden met bevolkingsgroei om de invloed van maritieme commerciële ontwikkeling te ondervangen, maar vergelijkbare statistieken over bevolkingsgroei vóór behandeling bestaan niet.',
+      '<strong>Commerciële ontwikkeling.</strong> In de analyse wordt rekening gehouden met bevolkingsgroei om de invloed van maritiem-gedreven stedelijke ontwikkeling te ondervangen, maar vergelijkbare statistieken over bevolkingsgroei vóór behandeling bestaan niet.',
     limit5Html:
       '<strong>Externe validiteit.</strong> De gegevens bevatten alleen Nederlandse steden. Daardoor blijkt niet of verschillen in de religieuze status van steden van invloed zijn op het geschatte effect van het vertrek van zeevarenden.',
     readEyebrow: 'Discussie en conclusie',
@@ -434,7 +434,7 @@ export const translations = {
     readPull:
       'De bevindingen wijzen op een opvallende verandering in de verhouding tussen volwassen mannen en vrouwen. Die werkte door op binnenlandse huwelijks- en arbeidsmarkten en zette vrouwen ertoe aan in menselijk kapitaal te investeren.',
     readP1:
-      'Deze scriptie vindt dat het vertrek van VOC-zeevarenden de geletterdheidskloof significant verkleint. Dit effect is bijna volledig toe te schrijven aan een stijging van de vrouwelijke geletterdheid en niet aan een daling van de mannelijke geletterdheid. Het resultaat is robuust wanneer rekening wordt gehouden met bevolkingsgroei na behandeling, maar veel minder robuust wanneer Rotterdam wordt weggelaten.',
+      'De resultaten wijzen erop dat het vertrek van VOC-zeevarenden de geletterdheidskloof significant verkleint. Dit effect is bijna volledig toe te schrijven aan een stijging van de vrouwelijke geletterdheid en niet aan een daling van de mannelijke geletterdheid. Het resultaat is robuust wanneer rekening wordt gehouden met bevolkingsgroei na behandeling, maar veel minder robuust wanneer Rotterdam wordt weggelaten.',
     readP2:
       'Deze scriptie opent ook een normatieve discussie over kolonialisme en onderbelichte groepen. Zulke groepen bestonden in het koloniale tijdperk niet alleen in gekoloniseerde gebieden, maar ook in koloniserende landen. De normatieve beoordeling hangt af van de vraag of en in hoeverre binnenlandse gevolgen van een koloniale schok afzonderlijk kunnen worden beoordeeld van de onderdrukkende gevolgen van kolonialisme in het buitenland.',
     readP3:
