@@ -15,11 +15,12 @@ const outPath = join(__dirname, '../src/js/bibliography.js');
 const KEY_ALIASES = {
   acemoglu2005: 'acemoglu2005a',
   akcomak2016: 'akcomak2016a',
+  akcomak2016a: 'akcomak2016',
   cantoni2015a: 'cantoni2015',
 };
 
 /** Bib keys for sources named in the website narrative (site/src/js/i18n.js), not the full thesis. */
-const SITE_CITED_KEYS = ['akcomak2016a', 'petram2024'];
+const SITE_CITED_KEYS = ['akcomak2016a', 'petram2024', 'schmidt2025'];
 
 const APA_TITLES = {
   akcomak2016a:
@@ -206,6 +207,7 @@ function citedKeysFromWebsite() {
   const found = new Set();
   if (/Akçomak|Akcomak/i.test(en) && /\(2016\)/.test(en)) found.add('akcomak2016a');
   if (/Petram/i.test(en) && /2024/.test(en)) found.add('petram2024');
+  if (/Schmidt/i.test(en) && /2025/.test(en)) found.add('schmidt2025');
   // Fall back to explicit allowlist intersection so the list cannot silently grow from thesis cites
   return SITE_CITED_KEYS.filter((k) => found.has(k));
 }
