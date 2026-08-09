@@ -66,29 +66,23 @@ content is unchanged.
 ### Interactive globe
 
 The thesis discusses long and deadly VOC voyages and colonial extraction but
-does not contain a route-by-route VOC/WIC atlas. The following keys therefore
+does not contain a route-by-route VOC atlas. The following keys therefore
 use source-backed supplemental text required by the retained globe:
 
 - `globeAlt`, `globeCaption`, `globeMetaWorld`, `globeMetaProjection`,
-  `globeInstruction`, `globeFilterLabel`, `globeFilterAll`, `globeFilterVoc`,
-  `globeFilterWic`, `globeRoutesLabel`, `globePause`, `globeResume`,
+  `globeInstruction`, `globeRoutesLabel`, `globePause`, `globeResume`,
   `globeZoomIn`, `globeZoomOut`, `globeTypeCorridor`, `globeTypeVoyage`,
   `globePeriodLabel`, `globeStopsLabel`, `globeSourcesLabel`,
-  `globeReconstruction`, `globeRegionalNote`, `globeEthics`
+  `globeReconstruction`, `globeEthics`
 - `globeRouteVocMain`, `globeRouteVocMainDesc`, `globeRouteBatavia`,
   `globeRouteBataviaDesc`, `globeRouteJapan`, `globeRouteJapanDesc`,
-  `globeRouteSpice`, `globeRouteSpiceDesc`, `globeRouteBrazil`,
-  `globeRouteBrazilDesc`, `globeRouteAtlantic`, `globeRouteAtlanticDesc`,
-  `globeRouteGideon`, `globeRouteGideonDesc`
+  `globeRouteSpice`, `globeRouteSpiceDesc`
 - `globePeriodVocMain`, `globePeriodBatavia`, `globePeriodJapan`,
-  `globePeriodSpice`, `globePeriodBrazil`, `globePeriodAtlantic`,
-  `globePeriodGideon`
-- `globePlaceTexel`, `globePlaceAmsterdam`, `globePlaceCape`,
+  `globePeriodSpice`
+- `globePlaceTexel`, `globePlaceCape`,
   `globePlaceStPaul`, `globePlaceSunda`, `globePlaceBatavia`,
   `globePlaceAbrolhos`, `globePlaceFormosa`, `globePlaceDejima`,
-  `globePlaceAmbon`, `globePlaceBanda`, `globePlaceRecife`,
-  `globePlaceElmina`, `globePlaceCuracao`, `globePlaceSuriname`,
-  `globePlaceWestAfrica`, `globePlaceNewAmsterdam`
+  `globePlaceAmbon`, `globePlaceBanda`
 
 `public/data/voyage-routes.json` also contains the displayed source institution
 names and source titles. They reproduce external source metadata, not thesis

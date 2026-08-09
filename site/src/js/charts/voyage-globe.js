@@ -82,7 +82,6 @@ export async function renderVoyageGlobe(mount, lang, t) {
     listeners.push(() => target.removeEventListener(event, handler, options));
   };
 
-  let filter = 'all';
   let activeRoute = data.routes[0];
   let rotation = [-12, -8, 0];
   let zoom = 1;
@@ -143,31 +142,13 @@ export async function renderVoyageGlobe(mount, lang, t) {
   stage.append(stageMeta, svg, stageControls, instruction);
 
   const panel = htmlEl('aside', 'globe-panel');
-  const filterLabel = htmlEl('p', 'globe-panel__label', t('globeFilterLabel'));
-  const filterGroup = htmlEl('div', 'globe-filter');
-  filterGroup.setAttribute('role', 'group');
-  filterGroup.setAttribute('aria-label', t('globeFilterLabel'));
-  const filterButtons = new Map();
-  for (const [value, labelKey] of [
-    ['all', 'globeFilterAll'],
-    ['voc', 'globeFilterVoc'],
-    ['wic', 'globeFilterWic'],
-  ]) {
-    const button = htmlEl('button', 'globe-filter__btn', t(labelKey));
-    button.type = 'button';
-    button.dataset.filter = value;
-    button.setAttribute('aria-pressed', value === filter ? 'true' : 'false');
-    filterButtons.set(value, button);
-    filterGroup.appendChild(button);
-  }
-
-  const routeLabel = htmlEl('p', 'globe-panel__label globe-panel__label--routes', t('globeRoutesLabel'));
+  const routeLabel = htmlEl('p', 'globe-panel__label', t('globeRoutesLabel'));
   const routeList = htmlEl('div', 'globe-route-list');
   const routeButtons = new Map();
   const detail = htmlEl('article', 'globe-detail');
   detail.setAttribute('aria-live', 'polite');
   const ethics = htmlEl('p', 'globe-ethics', t('globeEthics'));
-  panel.append(filterLabel, filterGroup, routeLabel, routeList, detail, ethics);
+  panel.append(routeLabel, routeList, detail, ethics);
   shell.append(stage, panel);
   mount.appendChild(shell);
 
@@ -226,14 +207,9 @@ export async function renderVoyageGlobe(mount, lang, t) {
     portElements.set(placeId, group);
   }
 
-  function routeVisible(route) {
-    return filter === 'all' || route.company === filter;
-  }
-
   function visiblePlaceIds() {
     const ids = new Set();
     for (const route of data.routes) {
-      if (!routeVisible(route)) continue;
       routePlaces(route).forEach((id) => ids.add(id));
     }
     return ids;
@@ -262,9 +238,6 @@ export async function renderVoyageGlobe(mount, lang, t) {
     stops.append(stopsLabel, document.createTextNode(places.map((id) => t(data.places[id].labelKey)).join(' → ')));
     const reconstruction = htmlEl('p', 'globe-detail__note', t('globeReconstruction'));
     detail.append(meta, heading, period, description, stops, reconstruction);
-    if (places.some((id) => data.places[id].regional)) {
-      detail.appendChild(htmlEl('p', 'globe-detail__note', t('globeRegionalNote')));
-    }
     detail.appendChild(htmlEl('p', 'globe-detail__sources-title', t('globeSourcesLabel')));
     const sources = htmlEl('ul', 'globe-detail__sources');
     for (const sourceId of route.sourceIds) {
@@ -282,20 +255,12 @@ export async function renderVoyageGlobe(mount, lang, t) {
 
   function updateSelection() {
     for (const route of data.routes) {
-      const visible = routeVisible(route);
       const selected = route.id === activeRoute.id;
       for (const { element } of routeElements.get(route.id)) {
-        element.style.display = visible ? '' : 'none';
         element.classList.toggle('is-selected', selected);
-        element.classList.toggle('is-dimmed', visible && !selected);
+        element.classList.toggle('is-dimmed', !selected);
       }
       const button = routeButtons.get(route.id);
-      button.hidden = !visible;
-      button.classList.toggle('is-active', selected);
-      button.setAttribute('aria-pressed', selected ? 'true' : 'false');
-    }
-    for (const [value, button] of filterButtons) {
-      const selected = value === filter;
       button.classList.toggle('is-active', selected);
       button.setAttribute('aria-pressed', selected ? 'true' : 'false');
     }
@@ -327,18 +292,6 @@ export async function renderVoyageGlobe(mount, lang, t) {
     redraw();
   }
 
-  function setFilter(value) {
-    filter = value;
-    if (!routeVisible(activeRoute)) {
-      activeRoute = data.routes.find((route) => routeVisible(route));
-      markerProgress = 0;
-      focusRoute(activeRoute);
-    }
-    setPaused(true);
-    updateSelection();
-    redraw();
-  }
-
   function redraw() {
     projection.rotate(rotation).scale(BASE_SCALE * zoom);
     sphere.setAttribute('d', path(SPHERE));
@@ -366,9 +319,8 @@ export async function renderVoyageGlobe(mount, lang, t) {
 
     const markerPath = routeElements.get(activeRoute.id)[0].coordinates;
     const markerPoint = pointAlongPath(markerPath, markerProgress);
-    const markerVisible = routeVisible(activeRoute) && geoDistance(centre, markerPoint) < Math.PI / 2;
+    const markerVisible = geoDistance(centre, markerPoint) < Math.PI / 2;
     marker.style.display = markerVisible ? '' : 'none';
-    marker.classList.toggle('globe-voyage-marker--wic', activeRoute.company === 'wic');
     if (markerVisible) {
       const projected = projection(markerPoint);
       marker.setAttribute('cx', projected[0].toFixed(2));
@@ -402,9 +354,6 @@ export async function renderVoyageGlobe(mount, lang, t) {
     frameId = requestAnimationFrame(animate);
   }
 
-  for (const [value, button] of filterButtons) {
-    listen(button, 'click', () => setFilter(value));
-  }
   for (const route of data.routes) {
     listen(routeButtons.get(route.id), 'click', () => selectRoute(route));
   }

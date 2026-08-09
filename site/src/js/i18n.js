@@ -44,16 +44,12 @@ export const translations = {
     settingH2: 'The rise of the Dutch Republic in the 17th century',
     settingP1:
       'The rise of the Dutch Republic in the 17th century marked a large increase in the relative importance of the maritime trading sector, where long and high-mortality voyages carried out by the Dutch East India Company (VOC) were necessary to both fund the independence war against the Spanish Empire and contest Spanish and Portuguese dominance in these areas, later creating the basis for the Dutch Golden Age.',
-    globeAlt: 'Interactive globe of reconstructed VOC and WIC sailing corridors and documented voyages',
+    globeAlt: 'Interactive globe of reconstructed VOC sailing corridors and documented voyages',
     globeCaption:
-      'Selected VOC and WIC connections in the seventeenth and eighteenth centuries. Ports are source-backed; lines between them reconstruct historically attested sailing corridors rather than exact ship tracks.',
+      'Selected VOC connections in the seventeenth and eighteenth centuries. Ports are source-backed; lines between them reconstruct historically attested sailing corridors rather than exact ship tracks.',
     globeMetaWorld: 'World · 17th–18th c.',
     globeMetaProjection: 'Orthographic',
     globeInstruction: 'Drag horizontally to rotate · use arrow keys when focused',
-    globeFilterLabel: 'Company routes',
-    globeFilterAll: 'All',
-    globeFilterVoc: 'VOC',
-    globeFilterWic: 'WIC',
     globeRoutesLabel: 'Select a route',
     globePause: 'Pause rotation',
     globeResume: 'Resume rotation',
@@ -66,9 +62,8 @@ export const translations = {
     globeSourcesLabel: 'Historical sources',
     globeReconstruction:
       'Route note: documented places are joined through reconstructed sailing waypoints informed by period routes and prevailing winds; the line is not a surviving day-by-day track.',
-    globeRegionalNote: 'The source identifies West Africa as a region rather than a single recorded port.',
     globeEthics:
-      'These networks joined commerce and war to colonial extraction. WIC Atlantic routes shown here include the forced trafficking of enslaved people.',
+      'These networks joined commerce and war to a company heavily involved with extractive activities outside Europe.',
     globeRouteVocMain: 'Republic to Batavia',
     globeRouteVocMainDesc:
       'The principal outward VOC connection rounded the Cape, then used the westerlies across the southern Indian Ocean before turning towards the Sunda Strait and Batavia.',
@@ -81,24 +76,11 @@ export const translations = {
     globeRouteSpice: 'Batavia to the Spice Islands',
     globeRouteSpiceDesc:
       'Batavia was the hub for recurrent VOC shipping east through the Java and Banda seas to Ambon and Banda, at the centre of a coercive spice monopoly.',
-    globeRouteBrazil: 'Republic to Dutch Brazil',
-    globeRouteBrazilDesc:
-      'The first WIC sent ships, soldiers and supplies across the Atlantic to Recife and its costly colonial war in north-eastern Brazil.',
-    globeRouteAtlantic: 'Atlantic trafficking circuit',
-    globeRouteAtlanticDesc:
-      'Ships carried European goods to West Africa, forcibly transported enslaved Africans to Curaçao, Suriname and other American markets, then returned with colonial commodities.',
-    globeRouteGideon: 'Gideon, 1664',
-    globeRouteGideonDesc:
-      'The WIC-sponsored Gideon sailed from Amsterdam to West Africa, Curaçao and New Amsterdam while forcibly transporting 291 enslaved captives.',
     globePeriodVocMain: 'c. 1617–1795',
     globePeriodBatavia: '1628–1629',
     globePeriodJapan: '1609–1795',
     globePeriodSpice: 'Seventeenth–eighteenth centuries',
-    globePeriodBrazil: '1630–1654',
-    globePeriodAtlantic: 'Especially 1674–1740',
-    globePeriodGideon: '1664',
     globePlaceTexel: 'Texel roadstead',
-    globePlaceAmsterdam: 'Amsterdam',
     globePlaceCape: 'Cape of Good Hope',
     globePlaceStPaul: 'St Paul Island corridor',
     globePlaceSunda: 'Sunda Strait',
@@ -108,12 +90,6 @@ export const translations = {
     globePlaceDejima: 'Hirado / Dejima',
     globePlaceAmbon: 'Ambon',
     globePlaceBanda: 'Banda Islands',
-    globePlaceRecife: 'Recife',
-    globePlaceElmina: 'Elmina',
-    globePlaceCuracao: 'Curaçao',
-    globePlaceSuriname: 'Suriname',
-    globePlaceWestAfrica: 'West African coast',
-    globePlaceNewAmsterdam: 'New Amsterdam',
     settingP2:
       'The prominence of the Dutch East India Company in the economy led to both “the departure of thousands of men of marriageable age” and left-behind married women (Schmidt, 2025, p. 20). Travellers’ accounts “portrayed early modern Dutch women as economically active, entrepreneurial, independent, and dominant” relative to their foreign countries (Schmidt, 2025, p. 17).',
     settingP3:
@@ -231,6 +207,8 @@ export const translations = {
       'This thesis also opens up normative discussions on colonialism and marginalised groups. Marginalised groups in the age of colonialism do not merely exist in colonised areas, but also exist in colonising states. The normative perception of these results depends on how disjointed the domestic effects of a colonial-linked shock should be analysed from the oppressive effects of colonialism abroad.',
     readP3:
       'Historical shocks can be equivalent to policy interventions: large-sweeping policy changes beneficial for women by, for example, affecting labour and marriage markets, can improve their economic outcomes. The study of historical shocks provides a method through which historical events can offer lessons for today’s policy.',
+    readP4:
+      'Overall, this thesis provides valuable contributions to the economic history literature, implications for normative discussions beyond the scope of what is normally considered in the economic science and indirect insights for contemporary policy design. Through the study of a historical setting, this thesis links itself to important philosophical and policy debates today.',
     footerTitle: 'Women’s economic autonomy in the Dutch Republic and maritime-induced male absence',
     footerByline: 'Take Watanabe · Philosophy, Politics and Economics · Vrije Universiteit Amsterdam · 22nd May 2026',
     footerPdf: 'Thesis PDF',
@@ -285,16 +263,12 @@ export const translations = {
     settingP1:
       'De opkomst van de Nederlandse Republiek in de zeventiende eeuw betekende een sterke toename van het relatieve belang van de maritieme handelssector. De lange reizen met hoge sterfte van de Verenigde Oostindische Compagnie (VOC) waren nodig om zowel de onafhankelijkheidsoorlog tegen het Spaanse Rijk te financieren als de Spaanse en Portugese dominantie te bestrijden, en vormden later de basis voor de Nederlandse Gouden Eeuw.',
     globeAlt:
-      'Interactieve wereldbol met gereconstrueerde vaarroutes en gedocumenteerde reizen van de VOC en WIC',
+      'Interactieve wereldbol met gereconstrueerde vaarroutes en gedocumenteerde reizen van de VOC',
     globeCaption:
-      'Geselecteerde VOC- en WIC-verbindingen in de zeventiende en achttiende eeuw. Havens zijn met bronnen onderbouwd; de lijnen ertussen reconstrueren historisch aangetoonde vaarcorridors en zijn geen exacte scheepstrajecten.',
+      'Geselecteerde VOC-verbindingen in de zeventiende en achttiende eeuw. Havens zijn met bronnen onderbouwd; de lijnen ertussen reconstrueren historisch aangetoonde vaarcorridors en zijn geen exacte scheepstrajecten.',
     globeMetaWorld: 'Wereld · 17e–18e eeuw',
     globeMetaProjection: 'Orthografisch',
     globeInstruction: 'Sleep horizontaal om te draaien · gebruik pijltjestoetsen bij focus',
-    globeFilterLabel: 'Compagnieroutes',
-    globeFilterAll: 'Alle',
-    globeFilterVoc: 'VOC',
-    globeFilterWic: 'WIC',
     globeRoutesLabel: 'Kies een route',
     globePause: 'Rotatie pauzeren',
     globeResume: 'Rotatie hervatten',
@@ -307,9 +281,8 @@ export const translations = {
     globeSourcesLabel: 'Historische bronnen',
     globeReconstruction:
       'Routenotitie: gedocumenteerde plaatsen zijn verbonden via gereconstrueerde vaarpunten op basis van historische routes en heersende winden; de lijn is geen bewaard dag-tot-dagtraject.',
-    globeRegionalNote: 'De bron noemt West-Afrika als regio en niet als één vastgelegde haven.',
     globeEthics:
-      'Deze netwerken verbonden handel en oorlog met koloniale uitbuiting. De getoonde Atlantische WIC-routes omvatten de gedwongen handel in tot slaaf gemaakte mensen.',
+      'Deze netwerken verbonden handel en oorlog met een compagnie die sterk betrokken was bij extractieve activiteiten buiten Europa.',
     globeRouteVocMain: 'Republiek naar Batavia',
     globeRouteVocMainDesc:
       'De voornaamste uitgaande VOC-verbinding rondde de Kaap en gebruikte daarna westenwinden over de zuidelijke Indische Oceaan, voordat zij naar Straat Soenda en Batavia afboog.',
@@ -322,24 +295,11 @@ export const translations = {
     globeRouteSpice: 'Batavia naar de Specerij-eilanden',
     globeRouteSpiceDesc:
       'Batavia was het knooppunt voor terugkerende VOC-scheepvaart oostwaarts door de Java- en Bandazee naar Ambon en Banda, het centrum van een met dwang gehandhaafd specerijenmonopolie.',
-    globeRouteBrazil: 'Republiek naar Nederlands-Brazilië',
-    globeRouteBrazilDesc:
-      'De eerste WIC stuurde schepen, soldaten en voorraden over de Atlantische Oceaan naar Recife en haar kostbare koloniale oorlog in noordoostelijk Brazilië.',
-    globeRouteAtlantic: 'Atlantisch mensenhandelcircuit',
-    globeRouteAtlanticDesc:
-      'Schepen brachten Europese goederen naar West-Afrika, vervoerden tot slaaf gemaakte Afrikanen onder dwang naar Curaçao, Suriname en andere Amerikaanse markten en keerden terug met koloniale waren.',
-    globeRouteGideon: 'Gideon, 1664',
-    globeRouteGideonDesc:
-      'De door de WIC gesponsorde Gideon voer van Amsterdam naar West-Afrika, Curaçao en Nieuw-Amsterdam en vervoerde daarbij 291 gevangengenomen mensen onder dwang.',
     globePeriodVocMain: 'ca. 1617–1795',
     globePeriodBatavia: '1628–1629',
     globePeriodJapan: '1609–1795',
     globePeriodSpice: 'Zeventiende–achttiende eeuw',
-    globePeriodBrazil: '1630–1654',
-    globePeriodAtlantic: 'Vooral 1674–1740',
-    globePeriodGideon: '1664',
     globePlaceTexel: 'Rede van Texel',
-    globePlaceAmsterdam: 'Amsterdam',
     globePlaceCape: 'Kaap de Goede Hoop',
     globePlaceStPaul: 'Corridor langs Île Saint-Paul',
     globePlaceSunda: 'Straat Soenda',
@@ -349,12 +309,6 @@ export const translations = {
     globePlaceDejima: 'Hirado / Dejima',
     globePlaceAmbon: 'Ambon',
     globePlaceBanda: 'Banda-eilanden',
-    globePlaceRecife: 'Recife',
-    globePlaceElmina: 'Elmina',
-    globePlaceCuracao: 'Curaçao',
-    globePlaceSuriname: 'Suriname',
-    globePlaceWestAfrica: 'West-Afrikaanse kust',
-    globePlaceNewAmsterdam: 'Nieuw-Amsterdam',
     settingP2:
       'De prominente positie van de VOC in de economie leidde zowel tot “het vertrek van duizenden mannen van huwbare leeftijd” als tot achtergebleven gehuwde vrouwen (Schmidt, 2025, p. 20). Reisverslagen “portretteerden vroegmoderne Nederlandse vrouwen als economisch actief, ondernemend, onafhankelijk en dominant” ten opzichte van vrouwen in andere landen (Schmidt, 2025, p. 17).',
     settingP3:
@@ -473,6 +427,8 @@ export const translations = {
       'Deze scriptie opent ook normatieve discussies over kolonialisme en gemarginaliseerde groepen. Gemarginaliseerde groepen in het koloniale tijdperk bestonden niet alleen in gekoloniseerde gebieden, maar ook in koloniserende staten. De normatieve beoordeling hangt af van de vraag hoe los de binnenlandse effecten van een koloniale schok moeten worden gezien van de onderdrukkende effecten van kolonialisme in het buitenland.',
     readP3:
       'Historische schokken kunnen vergelijkbaar zijn met beleidsinterventies: grootschalige beleidsveranderingen die vrouwen ten goede komen door bijvoorbeeld arbeids- en huwelijksmarkten te beïnvloeden, kunnen hun economische uitkomsten verbeteren. Historische gebeurtenissen kunnen zo lessen bieden voor het beleid van vandaag.',
+    readP4:
+      'Over het geheel genomen levert deze scriptie waardevolle bijdragen aan de economisch-historische literatuur, implicaties voor normatieve discussies buiten wat doorgaans binnen de economische wetenschap wordt beschouwd en indirecte inzichten voor hedendaags beleidsontwerp. Door een historische context te bestuderen, verbindt deze scriptie zich met belangrijke filosofische en beleidsdebatten van vandaag.',
     footerTitle: 'Economische autonomie van vrouwen in de Nederlandse Republiek en de door de VOC-veroorzaakte afwezigheid van mannen',
     footerByline: 'Take Watanabe · Philosophy, Politics and Economics · Vrije Universiteit Amsterdam · 22 mei 2026',
     footerPdf: 'Scriptie-PDF',

@@ -24,31 +24,10 @@
       "institution": "Western Australian Museum",
       "title": "Batavia, 1629",
       "url": "https://visit.museum.wa.gov.au/batavia-1629"
-    },
-    "wicPapers": {
-      "institution": "Nationaal Archief",
-      "title": "WIC: Overgekomen brieven en papieren, 1621–1674",
-      "url": "https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/wic-overgekomen-brieven-en-papieren-1621-1674"
-    },
-    "wicBrazil": {
-      "institution": "Nationaal Archief",
-      "title": "WIC: militairen uitgezonden naar Brazilië, 1630–1656",
-      "url": "https://www.nationaalarchief.nl/onderzoeken/zoekhulpen/west-indische-compagnie-wic-militairen-uitgezonden-naar-brazilie-1630-1656"
-    },
-    "triangle": {
-      "institution": "Zeeuws Archief",
-      "title": "The Voyage — History",
-      "url": "https://www.zeeuwsarchief.nl/en/themepage/slave-voyage-aboard-the-unity/the-voyage-history/"
-    },
-    "gideon": {
-      "institution": "Nationaal Archief",
-      "title": "The Tale of the White Horse",
-      "url": "https://www.nationaalarchief.nl/en/research/400-years-dutch-american-stories/the-tale-of-the-white-horse-the-first-slave-trading"
     }
   },
   "places": {
     "texel": { "coordinates": [4.82, 53.0], "labelKey": "globePlaceTexel" },
-    "amsterdam": { "coordinates": [4.9, 52.37], "labelKey": "globePlaceAmsterdam" },
     "cape": { "coordinates": [18.47, -34.36], "labelKey": "globePlaceCape" },
     "stPaul": { "coordinates": [77.53, -38.72], "labelKey": "globePlaceStPaul" },
     "sunda": { "coordinates": [105.85, -6.1], "labelKey": "globePlaceSunda" },
@@ -57,13 +36,7 @@
     "formosa": { "coordinates": [120.3, 22.6], "labelKey": "globePlaceFormosa" },
     "dejima": { "coordinates": [129.87, 32.74], "labelKey": "globePlaceDejima" },
     "ambon": { "coordinates": [128.18, -3.7], "labelKey": "globePlaceAmbon" },
-    "banda": { "coordinates": [129.9, -4.52], "labelKey": "globePlaceBanda" },
-    "recife": { "coordinates": [-34.88, -8.05], "labelKey": "globePlaceRecife" },
-    "elmina": { "coordinates": [-1.35, 5.08], "labelKey": "globePlaceElmina" },
-    "curacao": { "coordinates": [-68.93, 12.11], "labelKey": "globePlaceCuracao" },
-    "suriname": { "coordinates": [-55.17, 5.82], "labelKey": "globePlaceSuriname" },
-    "westAfrica": { "coordinates": [-5.0, 5.0], "labelKey": "globePlaceWestAfrica", "regional": true },
-    "newAmsterdam": { "coordinates": [-74.01, 40.71], "labelKey": "globePlaceNewAmsterdam" }
+    "banda": { "coordinates": [129.9, -4.52], "labelKey": "globePlaceBanda" }
   },
   "routes": [
     {
@@ -145,75 +118,6 @@
         { "coordinates": [121, -5], "reconstruction": true },
         { "place": "ambon" },
         { "place": "banda" }
-      ]]
-    },
-    {
-      "id": "wic-brazil",
-      "company": "wic",
-      "type": "corridor",
-      "period": "1630–1654",
-      "periodKey": "globePeriodBrazil",
-      "titleKey": "globeRouteBrazil",
-      "descriptionKey": "globeRouteBrazilDesc",
-      "sourceIds": ["wicPapers", "wicBrazil"],
-      "focus": [-21, 15],
-      "paths": [[
-        { "place": "amsterdam" },
-        { "coordinates": [-16, 28], "reconstruction": true },
-        { "coordinates": [-24, 12], "reconstruction": true },
-        { "coordinates": [-31, 1], "reconstruction": true },
-        { "place": "recife" }
-      ]]
-    },
-    {
-      "id": "wic-atlantic-circuit",
-      "company": "wic",
-      "type": "corridor",
-      "period": "especially 1674–1740",
-      "periodKey": "globePeriodAtlantic",
-      "titleKey": "globeRouteAtlantic",
-      "descriptionKey": "globeRouteAtlanticDesc",
-      "sourceIds": ["triangle", "wicPapers"],
-      "focus": [-31, 14],
-      "paths": [
-        [
-          { "place": "amsterdam" },
-          { "coordinates": [-16, 28], "reconstruction": true },
-          { "place": "elmina" },
-          { "coordinates": [-27, 4], "reconstruction": true },
-          { "place": "curacao" },
-          { "coordinates": [-45, 28], "reconstruction": true },
-          { "coordinates": [-25, 40], "reconstruction": true },
-          { "place": "amsterdam" }
-        ],
-        [
-          { "place": "elmina" },
-          { "coordinates": [-25, 2], "reconstruction": true },
-          { "place": "suriname" },
-          { "coordinates": [-40, 27], "reconstruction": true },
-          { "coordinates": [-25, 40], "reconstruction": true },
-          { "place": "amsterdam" }
-        ]
-      ]
-    },
-    {
-      "id": "wic-gideon-1664",
-      "company": "wic",
-      "type": "voyage",
-      "period": "1664",
-      "periodKey": "globePeriodGideon",
-      "titleKey": "globeRouteGideon",
-      "descriptionKey": "globeRouteGideonDesc",
-      "sourceIds": ["gideon"],
-      "focus": [-34, 23],
-      "paths": [[
-        { "place": "amsterdam" },
-        { "coordinates": [-16, 28], "reconstruction": true },
-        { "place": "westAfrica" },
-        { "coordinates": [-29, 5], "reconstruction": true },
-        { "place": "curacao" },
-        { "coordinates": [-72, 25], "reconstruction": true },
-        { "place": "newAmsterdam" }
       ]]
     }
   ]

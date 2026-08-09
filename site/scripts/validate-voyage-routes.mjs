@@ -8,7 +8,7 @@ const data = JSON.parse(readFileSync(join(here, '../public/data/voyage-routes.js
 const i18n = readFileSync(join(here, '../src/js/i18n.js'), 'utf8');
 const errors = [];
 const routeIds = new Set();
-const allowedCompanies = new Set(['voc', 'wic']);
+const allowedCompanies = new Set(['voc']);
 const allowedTypes = new Set(['corridor', 'voyage']);
 
 function validCoordinate(value) {
